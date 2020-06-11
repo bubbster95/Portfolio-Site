@@ -1,0 +1,106 @@
+html,body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+h1 {
+    margin: 0px;
+    font-size: 35px;
+    display: inline-block;
+    z-index: 1;
+    color: white;
+    font-family: impact;
+    padding: 15px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #4197CA;
+    text-align: left;
+}
+
+.navs {
+    width: 26%;
+    margin-right: 20px;
+    float: right; 
+}
+
+.nav {
+    font-size: 20px;
+    color: white;
+    font-family: impact;
+    border-color: rgba(0, 0, 0, 0);
+    background-color: #4197CA;
+    margin-right: 5px;
+    float: right;
+}
+
+h2 {
+    padding: 10px;
+    font-size: 35px;
+    font-family: impact;
+    color: #08659C;
+}
+
+.content {
+    text-align: center;
+    margin: 0px;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    padding-top: 100px;
+}
+
+.landing-tile {
+    color: #4197CA;
+    background-color: #90ECCA;
+    font-size: 5vw;
+    font-family: impact;
+    border-color: rgba(0, 0, 0, 0);
+    border-radius: 15px;
+    margin: 15vh 2vw 0vh;
+    height: 50%;
+    width: 45%;
+}
+a {
+    color: #4197CA;
+    text-decoration: none;
+}
+
+.tile {
+    cursor: pointer;
+    transition: .4s;
+    color: #4197CA;
+    background-color: #90ECCA;
+    font-size: 5vh;
+    font-family: impact;
+    border-color: rgba(0, 0, 0, 0);
+    border-radius: 15px;
+    margin: 5vh;
+    height: 40vh;
+    width: 40vh;
+}
+
+.active, .pro-tile:hover {
+    background-color: #4197CA
+}
+
+.panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+  }
+
+.design-tile {
+    color: #4197CA;
+    background-color: #90ECCA;
+    font-size: 3vh;
+    font-family: impact;
+    border-color: rgba(0, 0, 0, 0);
+    border-radius: 15px;
+    margin: 5vh;
+    height: 45vh;
+    width: 45vh;
+}
