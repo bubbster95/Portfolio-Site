@@ -43,6 +43,15 @@ h2 {
     color: #08659C;
 }
 
+p {
+    font-family: tahoma;
+    font-size: 2.5vw;
+    color: #08659C;
+}
+
+.name {
+    float: left;
+}
 .content {
     text-align: center;
     margin: 0px;
@@ -81,17 +90,44 @@ a {
     height: 40vh;
     width: 40vh;
 }
+.active, .tile:hover {
+    color: white;
+    background-color: #4197CA;
+}
+.active:hover {
+    color: #4197CA;
+    background-color: #90ECCA;
+}
 
-.active, .pro-tile:hover {
-    background-color: #4197CA
+.active {
+    font-family: impact;
+    font-size: 30px;
+    height: 40px;
+    width: 75vw;
+    border-radius: 10px 10px 0px 0px;
+    border-color: rgba(0, 0, 0, 0);
+}
+
+#disco-img {
+    height: 50%;
+    width: 50%;
+    float: left;
+}
+
+#disco-text {
+    margin-top: 15%;
+    padding: 20px;
 }
 
 .panel {
-    padding: 0 18px;
+    margin: auto;
+    text-align: center;
+    border-radius: 0px 0px 10px 10px;
+    background-color: #90ECCA;
+    width: 75vw;
     display: none;
-    background-color: white;
     overflow: hidden;
-  }
+}
 
 .design-tile {
     color: #4197CA;
