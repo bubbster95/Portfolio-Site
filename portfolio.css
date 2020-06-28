@@ -1,4 +1,4 @@
-html,body {
+html, body {
     width: 100%;
     height: 100%;
     margin: 0px;
@@ -32,21 +32,41 @@ h1 {
     font-family: impact;
     border-color: rgba(0, 0, 0, 0);
     background-color: #4197CA;
-    margin-right: 5px;
+    margin: 12px 5px;
     float: right;
 }
 
 h2 {
     padding: 10px;
-    font-size: 35px;
+    font-size: 5vw;
     font-family: impact;
     color: #08659C;
 }
 
-p {
+h3 {
+    margin-left: 7%;
+    text-align: left;
+    font-size: 3vw;
+    font-family: impact;
+    color: #08659C;
+}
+
+h4 {
+    margin-left: 7%;
+    text-align: left;
+    font-family: tahoma;
+    font-size: 2vw;
+    color: #08659C;
+}
+
+p, li {
+    display: inline-block;
+    height: 40vw;
+    width: 500px;
     font-family: tahoma;
     font-size: 2.5vw;
     color: #08659C;
+    
 }
 
 .name {
@@ -61,7 +81,9 @@ p {
     padding-top: 100px;
 }
 
-.landing-tile {
+/* .landing-tile {
+    cursor: pointer;
+    transition: .5s;
     color: #4197CA;
     background-color: #90ECCA;
     font-size: 5vw;
@@ -71,7 +93,8 @@ p {
     margin: 15vh 2vw 0vh;
     height: 50%;
     width: 45%;
-}
+} */
+
 a {
     color: #4197CA;
     text-decoration: none;
@@ -86,31 +109,42 @@ a {
     font-family: impact;
     border-color: rgba(0, 0, 0, 0);
     border-radius: 15px;
-    margin: 5% 10%;
-    /* margin-top: 5%;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-bottom: 10%; */
+    margin: auto;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 10%;
     height: 50vh;
     width: 50vh;
 }
-.active, .tile:hover {
+@media only screen and (max-width: 700px) {
+    .tile {
+        height: 40vh;
+        width: 40vh;
+    }
+    h1 {
+        font-size: 30px;
+    }
+  }
+.active, .tile:hover, .landing-tile:hover, a:hover {
     color: white;
     background-color: #4197CA;
+    outline: none;
 }
-.active:hover {
+.active:hover{
     color: #4197CA;
     background-color: #90ECCA;
 }
 
 .active {
-    margin-top: 5%;
     font-family: impact;
     font-size: 30px;
     height: 40px;
     width: 70vw;
     border-radius: 10px 10px 0px 0px;
     border-color: rgba(0, 0, 0, 0);
+    margin: auto;
+    margin-left: 2%;
+    margin-right: 2%;
 }
 .active {
     animation-name: active-animation;
@@ -122,32 +156,58 @@ a {
     100% {width:70vw; font-size: 0px;}
 
 }
-
-#disco-img {
-    margin-top: 5%;
-    height: 45vh;
-    width: 45vh;
-    float: left;
+.video {
+    margin-left: 2%;
 }
 
-#disco-text {
+.text {
     margin-top: 3%;
     margin-bottom: 3%;
     padding: 30px;
 }
 
+.img {
+    cursor: pointer;
+    padding: 1.5%;
+    height: 40vw;
+}
+
+.left-img {
+    margin-left: 5%;
+    margin-top: 0%;
+    float: left;
+    cursor: pointer;
+    padding: 1.5%;
+    height: 40vw;
+}
+
+.contact-text {
+    margin-top: 0%;
+    text-align: left;
+    height: 20vw;
+    width: 50vw;
+}
+
+.left-text {
+    margin: 10px;
+    text-align: left;
+    width: 30vw;
+}
+
 .panel {
     margin: auto;
+    margin-bottom: 20px;
     text-align: center;
     border-radius: 0px 0px 10px 10px;
     background-color: #90ECCA;
     width: 70vw;
-    height: 60%;
+    height: 42vw;
     display: none;
-    overflow: scroll;
+    overflow-x: scroll;
+    overflow-y: hidden;
 }
 
-.panel, #disco-text, #disco-img {
+.panel, .text, .left-img .left-text {
     animation-name: accordion-panel;
     animation-duration: .8s;
     
@@ -156,18 +216,6 @@ a {
 @keyframes accordion-panel {
     0%   {height: 0; font-size: 0; opacity: 0;}
     50%  {height: 0; font-size: 0; opacity: 0;}
-    100% {height: 60%; font-size: 0px; opacity: 100%;}
+    100% {font-size: 0px; opacity: 100%;}
 
-}
-
-.design-tile {
-    color: #4197CA;
-    background-color: #90ECCA;
-    font-size: 3vh;
-    font-family: impact;
-    border-color: rgba(0, 0, 0, 0);
-    border-radius: 15px;
-    margin: 5vh;
-    height: 45vh;
-    width: 45vh;
 }

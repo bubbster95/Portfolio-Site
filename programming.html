@@ -10,28 +10,41 @@
             <h1>
                 Will Stiles: Programmer
                 <div class="navs">
-                    <a class="nav" href="#projects">Projects</a>
                     <a class="nav" href="contact.html">Contact</a>
                 </div>
             </h1>
         </div>
         <div class="content">
             <h2 id="projects">Projects</h2>
+            <!-- Disco Dude -->
             <button class="tile" id="disco-dude" onclick="accordion('disco-dude', 'disco-panel')">Disco Dude</button>
             <div class="panel" id="disco-panel">
-                <img id="disco-img" src="assets/DiscoDanceSprite5.png">
-                <p id="disco-text">
-                    A basic game, Disco Dude is an HTML5 game where targets fly towards the character. 
-                    Click the targets before they reach the center 
-                    It may start out slow but this game picks up serious speed. <br>
-                    This link takes you to the game, <a>Disco Dude</a>.<br>
-                    Or visit this Github repository <a>Repo Disco</a>.
-                </p>
+                <img class="left-img" id="disco-dance-sprite" src="assets/DiscoDanceSprite5.png" onclick="window.open('https://disco-dude.netlify.app/', '_blank')">
+                <div>
+                    <p class="left-text">
+                        <a add target="_blank" href="https://disco-dude.netlify.app/">Disco Dude</a>, a game where targets fly towards the character. 
+                        Click the yellow targets before they reach the center. 
+                        Green targets give 10 points, Blue slows target speed. Red can take a life! <br>
+                        Play the game here, <a add target="_blank" href="https://disco-dude.netlify.app/">Disco Dude</a><br>
+                        or visit the Github repository <a add target="_blank" href="https://github.com/bubbster95/DiscoDude.git">Repo Disco</a>.
+                    </p>
+                </div>
             </div>
+            <!-- Portfolio Site -->
             <button class="tile" id="portfolio" onclick="accordion('portfolio', 'portofolio-panel')">Portfolio Site</button>
             <div class="panel" id="portofolio-panel">
-                <img id="disco-img" src="assets/DiscoDanceSprite5.png">
-                <p id="disco-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <div>
+                    <p class="left-text">
+                        Will Stiles created this portfolio site using HTML5, CSS, and JS.
+                        This site has two sides:<br><br>
+                        <span>&#8226;</span> Design <br>
+                        <span>&#8226;</span> Programming <br><br>
+                        Follow this link to see both, <a href="index.html">Landing Page</a>.<br>
+                        Here is a link to the Github repo for this site. <a href="https://github.com/bubbster95/Portfolio-Site.git">Portfolio Repo</a>
+                    </p>
+                </div>
+                <img class="left-img" src="assets/Gallery/PortfolioDesign.png" onclick="window.open('assets/Gallery/PortfolioDesign.png', '_blank')">
+                <p class='text'></p>
             </div>
         </div>
     </body>
