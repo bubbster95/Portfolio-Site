@@ -81,20 +81,6 @@ p, li {
     padding-top: 100px;
 }
 
-/* .landing-tile {
-    cursor: pointer;
-    transition: .5s;
-    color: #4197CA;
-    background-color: #90ECCA;
-    font-size: 5vw;
-    font-family: impact;
-    border-color: rgba(0, 0, 0, 0);
-    border-radius: 15px;
-    margin: 15vh 2vw 0vh;
-    height: 50%;
-    width: 45%;
-} */
-
 a {
     color: #4197CA;
     text-decoration: none;
@@ -164,6 +150,9 @@ a {
     margin-top: 3%;
     margin-bottom: 3%;
     padding: 30px;
+}
+#profile {
+    rotate: 90;
 }
 
 .img {
