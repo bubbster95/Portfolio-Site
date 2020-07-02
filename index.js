@@ -7,6 +7,7 @@ accordion = (id, panId) => {
     } else {
         button.className = 'active';
         panel.style.display = 'flex';
+        panel.scrollIntoView(false);
       }
 }
 
