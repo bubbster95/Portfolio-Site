@@ -3,52 +3,60 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="./portfolio.css" />
+        <link rel="stylesheet" href="./tile-images.css" />
         <script type="text/javascript" src="./index.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Russo+One&display=swap" rel="stylesheet">
     </head>
     
-    <body id="design-landing">
-        <h1>Will Stiles: Designer
+    <body id="design-landing" onload="addEvents()">
+        <div class="header">
+            <h1>Will Stiles</h1>
             <a class="nav" href="contact.html">Contact</a>
-        </h1>
-
-        <h2 id="projects">Projects</h2>
+        </div>
+        <h2 id="projects">Design Projects</h2>
         <div class="content">
             <!-- Motif -->
-            <div class="accordion">
-                <button class="tile" id="left" onclick="accordion('left', 'motif-panel')">Motif Magazine</button>
-                <div class="panel" id="motif-panel">
-                    <img class="img" alt="Motif Food cover" src="assets/Gallery/Motif/FoodCover.jpg" onclick="window.open('assets/Gallery/Motif/FoodCover.jpg', '_blank')">
-                    <div class="flex-text">
-                        <p>
-                            As the Lead Designer for Motif Magazine, Will oversaw all aspects of design as follows:<br><br>
-                            <span>&#8226;</span> Produce illustrations <br>
-                            <span>&#8226;</span> Layout <br>
-                            <span>&#8226;</span> Search graphics <br>
-                            <span>&#8226;</span> Generate Ads<br>
-                            <span>&#8226;</span> Negotiate printing
-                        </p>
-                    </div>
-                    <img class="img" alt="Cannabis Eating spread" src="assets/Gallery/Motif/CannabisEating.jpg" onclick="window.open('assets/Gallery/Motif/CannabisEating.jpg', '_blank')">
-                    <img class="img" alt="Tiny lobster photobash" src="assets/Gallery/Motif/TinyLobster.jpg" onclick="window.open('assets/Gallery/Motif/TinyLobster.jpg', '_blank')">
-                    <img class="img" alt="Spring guide center spread" src="assets/Gallery/Motif/Centerspread.jpg" onclick="window.open('assets/Gallery/Motif/Centerspread.jpg', '_blank')">
-                    <img class="img" alt="Antarctica center spread" src="assets/Gallery/Motif/AntarcticaSpread.jpg" onclick="window.open('assets/Gallery/Motif/AntarcticaSpread.jpg', '_blank')">
-                    <img class="img" alt="Hot Rods photobash" src="assets/Gallery/Motif/HotRods.jpg" onclick="window.open('assets/Gallery/Motif/HotRods.jpg', '_blank')">
-                    <img class="img" alt="Whale Guitar photobash" src="assets/Gallery/Motif/WhaleGuitar.jpg" onclick="window.open('assets/Gallery/Motif/WhaleGuitar.jpg', '_blank')">
+            <div class="container">
+                <div class="tile-top" id="motif"></div>
+                <button class="tile-bottom" id="motif-button">Motif Magazine</button>
+            </div>
+            <div class="panel" id="motif-panel">
+                <button class="closePanel">X</button>
+                <img class="img" alt="Motif Food cover" src="assets/Gallery/Motif/FoodCover.jpg" onclick="window.open('assets/Gallery/Motif/FoodCover.jpg', '_blank')">
+                <div class="flex-text">
+                    <p>
+                        As the Lead Designer for Motif Magazine, Will oversaw all aspects of design as follows:<br><br>
+                        <span>&#8226;</span> Produce illustrations <br>
+                        <span>&#8226;</span> Layout <br>
+                        <span>&#8226;</span> Search graphics <br>
+                        <span>&#8226;</span> Generate Ads<br>
+                        <span>&#8226;</span> Negotiate printing
+                    </p>
                 </div>
+                <img class="img" alt="Cannabis Eating spread" src="assets/Gallery/Motif/CannabisEating.jpg" onclick="window.open('assets/Gallery/Motif/CannabisEating.jpg', '_blank')">
+                <img class="img" alt="Tiny lobster photobash" src="assets/Gallery/Motif/TinyLobster.jpg" onclick="window.open('assets/Gallery/Motif/TinyLobster.jpg', '_blank')">
+                <img class="img" alt="Spring guide center spread" src="assets/Gallery/Motif/Centerspread.jpg" onclick="window.open('assets/Gallery/Motif/Centerspread.jpg', '_blank')">
+                <img class="img" alt="Antarctica center spread" src="assets/Gallery/Motif/AntarcticaSpread.jpg" onclick="window.open('assets/Gallery/Motif/AntarcticaSpread.jpg', '_blank')">
+                <img class="img" alt="Hot Rods photobash" src="assets/Gallery/Motif/HotRods.jpg" onclick="window.open('assets/Gallery/Motif/HotRods.jpg', '_blank')">
+                <img class="img" alt="Whale Guitar photobash" src="assets/Gallery/Motif/WhaleGuitar.jpg" onclick="window.open('assets/Gallery/Motif/WhaleGuitar.jpg', '_blank')">
             </div>
             <!-- Khoo -->
-            <div class="accordion">
-                <button class="tile" id="khoo" onclick="accordion('khoo', 'khoo-panel')">Khoo Design</button>
-                <div class="panel" id="khoo-panel">
-                    <img rel="preload" alt="Khoo Drinks menu" class="img" src="assets/Gallery/Khoo/Drinks.jpg" onclick="window.open('assets/Gallery/Khoo/Drinks.jpg', '_blank')">
-                    <div>
+            <div class="container">
+                <div class="tile-top" id="khoo"></div>
+                <button class="tile-bottom" id="khoo-button">Khoo Design</button>
+            </div>
+            <div class="panel" id="khoo-panel">
+                <button class="closePanel">X</button>
+                <div class="display">
+                    <img rel="preload" alt="Khoo Drinks menu" class="left-img" src="assets/Gallery/Khoo/Drinks.jpg" onclick="window.open('assets/Gallery/Khoo/Drinks.jpg', '_blank')">
+                    <div class="description">
                         <p> 
                             Will Stiles rebranded Khoo's design.<br>
                             Will Created: <br><br>
-                            <span>&#8226;</span> 18' X 8' advertisement<br>
-                            <span>&#8226;</span> Dinning Menu <br>
-                            <span>&#8226;</span> Table Tents <br>
-                            <span>&#8226;</span> Social Media Promos <br>
+                            &#8226 18' X 8' advertisement<br>
+                            &#8226 Dinning Menu <br>
+                            &#8226 Table Tents <br>
+                            &#8226 Social Media Promos <br>
                         </p>
                     </div>
                     <img rel="preload" alt="Khoo Sunday" class="img" src="assets/Gallery/Khoo/SundayKhoo.jpg" onclick="window.open('assets/Gallery/Khoo/SundayKhoo.jpg', '_blank')">
@@ -56,64 +64,72 @@
                 </div>
             </div>
             <!-- UI -->
-            <div class="accordion">
-                <button class="tile" id="ui" onclick="accordion('ui', 'ui-panel')">UI</button>
-                <div class="panel" id="ui-panel">
-                    <img class="img" alt="Friend Finder feed page" src="assets/Gallery/UI/FFFeed.jpg" onclick="window.open('assets/Gallery/UI/FFFeed.jpg', '_blank')">
-                    <div>
-                        <p> 
-                            Will has created several UI for private projects.<br> such as: <br><br>
-                            <span>&#8226;</span> Friend Finder <br>
-                            <span>&#8226;</span> <a add target="_blank" href="https://comic-complex.netlify.app/#/">Comic Complex</a> <br>
-                            <span>&#8226;</span> <a add target="_blank" href="https://disco-dude.netlify.app/">Disco Dude</a><br>
-                            <span>&#8226;</span> This portfolio site
-                        </p>
-                    </div>
-                    <img class="img" alt="Friend Finder friend page" src="assets/Gallery/UI/FFFriendsPage.jpg" onclick="window.open('assets/Gallery/UI/FFFriendsPage.jpg', '_blank')">
-                    <img class="img" alt="Friend Finder home page" src="assets/Gallery/UI/FFHomePage.jpg" onclick="window.open('assets/Gallery/UI/FFHomePage.jpg', '_blank')">
-                    <img class="img" alt="Friend Finder flow chart" src="assets/Gallery/UI/FlowChartSmall.jpg" onclick="window.open('assets/Gallery/UI/FlowChartSmall.jpg', '_blank')">
-                    <img class="img" alt="Friend Finder Resume Book" src="assets/Gallery/UI/ResumeBook.png" onclick="window.open('assets/Gallery/UI/ResumeBook.png', '_blank')">
+            <div class="container">
+                <div class="tile-top" id="ui"></div>
+                <button class="tile-bottom" id="ui-button">UI</button>
+            </div>
+            <div class="panel" id="ui-panel">
+                <button class="closePanel">X</button>
+                <img class="img" alt="Friend Finder feed page" src="assets/Gallery/UI/FFFeed.jpg" onclick="window.open('assets/Gallery/UI/FFFeed.jpg', '_blank')">
+                <div>
+                    <p> 
+                        Will has created several UI for private projects.<br> such as: <br><br>
+                        <span>&#8226;</span> Friend Finder <br>
+                        <span>&#8226;</span> <a add target="_blank" href="https://comic-complex.netlify.app/#/">Comic Complex</a> <br>
+                        <span>&#8226;</span> <a add target="_blank" href="https://disco-dude.netlify.app/">Disco Dude</a><br>
+                        <span>&#8226;</span> This portfolio site
+                    </p>
                 </div>
+                <img class="img" alt="Friend Finder friend page" src="assets/Gallery/UI/FFFriendsPage.jpg" onclick="window.open('assets/Gallery/UI/FFFriendsPage.jpg', '_blank')">
+                <img class="img" alt="Friend Finder home page" src="assets/Gallery/UI/FFHomePage.jpg" onclick="window.open('assets/Gallery/UI/FFHomePage.jpg', '_blank')">
+                <img class="img" alt="Friend Finder flow chart" src="assets/Gallery/UI/FlowChartSmall.jpg" onclick="window.open('assets/Gallery/UI/FlowChartSmall.jpg', '_blank')">
+                <img class="img" alt="Friend Finder Resume Book" src="assets/Gallery/UI/ResumeBook.png" onclick="window.open('assets/Gallery/UI/ResumeBook.png', '_blank')">
             </div>
             <!-- Comics -->
-            <div class="accordion">
-                <button class="tile" id="comics" onclick="accordion('comics', 'comics-panel')">Comics</button>
-                <div class="panel" id="comics-panel">
-                    <img class="img" alt="Alienation S1E7" src="assets/Gallery/Comics/AlienationS1E7.jpg" onclick="window.open('assets/Gallery/Comics/AlienationS1E7.jpg', '_blank')">
-                    <div>
-                        <p> 
-                            Alienation was a comic series created by Will Stiles for Motif Magazine.
-                            This office comedy often depicted strange happenings at Motif.
-                            For a full gallery of all comics visit the <a add target="_blank" href="https://comic-complex.netlify.app/#/">Comic Complex</a>.
-                        </p>
-                    </div>
-                    <img class="img" alt="Alienation S1E5" src="assets/Gallery/Comics/AlienationS1E5FullMin.jpg" onclick="window.open('assets/Gallery/Comics/AlienationS1E5FullMin.jpg', '_blank')">
-                    <img class="img" alt="Alienation S1E3" src="assets/Gallery/Comics/AlienationS1E3.jpg" onclick="window.open('assets/Gallery/Comics/AlienationS1E3.jpg', '_blank')">
+            <div class="container">
+                <div class="tile-top" id="comics"></div>
+                <button class="tile-bottom" id="comics-button">Comics</button>
+            </div>
+            <div class="panel" id="comics-panel">
+                <button class="closePanel">X</button>
+                <img class="img" alt="Alienation S1E7" src="assets/Gallery/Comics/AlienationS1E7.jpg" onclick="window.open('assets/Gallery/Comics/AlienationS1E7.jpg', '_blank')">
+                <div>
+                    <p> 
+                        Alienation was a comic series created by Will Stiles for Motif Magazine.
+                        This office comedy often depicted strange happenings at Motif.
+                        For a full gallery of all comics visit the <a add target="_blank" href="https://comic-complex.netlify.app/#/">Comic Complex</a>.
+                    </p>
                 </div>
+                <img class="img" alt="Alienation S1E5" src="assets/Gallery/Comics/AlienationS1E5FullMin.jpg" onclick="window.open('assets/Gallery/Comics/AlienationS1E5FullMin.jpg', '_blank')">
+                <img class="img" alt="Alienation S1E3" src="assets/Gallery/Comics/AlienationS1E3.jpg" onclick="window.open('assets/Gallery/Comics/AlienationS1E3.jpg', '_blank')">
             </div>
             <!-- Animation -->
-            <div class="accordion">
-                <button class="tile" id="animation" onclick="accordion('animation', 'animation-panel')">3D & 2D Animation</button>
-                <div class="panel" id="animation-panel">
+            <div class="container">
+                <div class="tile-top" id="animation"></div>
+                <button class="tile-bottom" id="animation-button">3D & 2D Animation</button>
+            </div>
+            <div class="panel" id="animation-panel">
+                <button class="closePanel">X</button>
                 <iframe class="video" width="100%" height="100%"src="https://www.youtube.com/embed/6w8QNKQ0XFU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <iframe class="video" width="100%" height="100%"src="https://www.youtube.com/embed/4H05nyf2ph0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <iframe class="video" width="100%" height="100%"src="https://www.youtube.com/embed/Dp-j1I2MjPs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
+                <iframe class="video" width="100%" height="100%"src="https://www.youtube.com/embed/4H05nyf2ph0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe class="video" width="100%" height="100%"src="https://www.youtube.com/embed/Dp-j1I2MjPs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <!-- website -->
-            <div class="accordion">
-                <button class="tile" id="website" onclick="accordion('website', 'website-panel')">Websites</button>
-                <div class="panel" id="website-panel">
-                    <img class="img" alt="Comic Complex about page" id="comic-complex" src="assets/Gallery/Comic Complex/about.png" onclick="window.open('assets/Gallery/Comic Complex/about.png', '_blank')">
-                    <div>
-                        <p> 
-                            <a add target="_blank" href="https://comic-complex.netlify.app/#/">Comic Complex</a> is a concpet portfolio site.<br>
-                        Will designed each page to look like a floor in an eccentric artist loft.
-                        Each page features some type of comic, animation, UI, and more.
-                        </p>
-                    </div>
-                    <img class="img" alt="Comic Complex home page" src="assets/Gallery/Comic Complex/Home.png" onclick="window.open('assets/Gallery/Comic Complex/Home.png', '_blank')">
+            <div class="container">
+                <div class="tile-top" id="website"></div>
+                <button class="tile-bottom" id="website-button">Websites</button>
+            </div>
+            <div class="panel" id="website-panel">
+                <button class="closePanel">X</button>
+                <img class="img" alt="Comic Complex about page" id="comic-complex" src="assets/Gallery/Comic Complex/about.png" onclick="window.open('assets/Gallery/Comic Complex/about.png', '_blank')">
+                <div>
+                    <p> 
+                        <a add target="_blank" href="https://comic-complex.netlify.app/#/">Comic Complex</a> is a concpet portfolio site.<br>
+                    Will designed each page to look like a floor in an eccentric artist loft.
+                    Each page features some type of comic, animation, UI, and more.
+                    </p>
                 </div>
+                <img class="img" alt="Comic Complex home page" src="assets/Gallery/Comic Complex/Home.png" onclick="window.open('assets/Gallery/Comic Complex/Home.png', '_blank')">
             </div>
         </div>  
     </body>

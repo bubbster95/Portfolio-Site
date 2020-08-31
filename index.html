@@ -1,20 +1,25 @@
 <!DOCTYPE html>
-<html class="html">
+<html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="./portfolio.css" />
+        <link rel="stylesheet" href="./tile-images.css" />
         <script type="text/javascript" src="./index.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Russo+One&display=swap" rel="stylesheet">
     </head>
-    <body id="landing">
+    <body onload="addEvents()">
         <div class="header">
-            <h1 class="smaller">Will Stiles: Design Oriented Programmer</h1>
-        </div> 
+            <h1> Will Stiles </h1>
+            <a class="nav" href="contact.html">Contact</a>
+        </div>
         <div class="content">
-            <div class="landing">
-                <button class="tile" id="programming-tile" onclick="window.location.href='programming.html'">Programming</button>
+            <div class="container" id="landing">
+                <div class="tile-top" id="programming"></div>
+                <button class="tile-bottom" id="programming-button" onclick="window.location.href='programming.html'">Programming</button>
             </div>
-            <div class="landing">
-                <button class="tile" id="design-tile" onclick="window.location.href='design.html'">Design</button>
+            <div class="container" id="landing">
+                <div class="tile-top" id="design"></div>
+                <button class="tile-bottom" id="design-button" onclick="window.location.href='design.html'">Design</button>
             </div>
         </div>
     </body>

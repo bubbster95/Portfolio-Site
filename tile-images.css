@@ -1,0 +1,72 @@
+/* Backgroung Images */
+#turner {
+    background-image: url("assets/Thumbnails/WebVase2.jpg");
+    background-position: top left;
+    background-size: cover;
+}
+#disco-dude {
+    background-image: url("assets/DiscoDanceSprite5.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#scroll {
+    background-image: url("assets/Gallery/websites/InfniteScroll.png");
+    background-position: top left;
+    background-size: cover;
+}
+#portfolio {
+    background-image: url("assets/Gallery/websites/PortfolioDesign.jpg");
+    background-position: top left;
+    background-size: cover;
+}
+
+#motif {
+    background-image: url("assets/Gallery/Motif/FoodCover.jpg");
+    background-position: top left;
+    background-size: cover;
+}
+
+#khoo {
+    background-image: url("assets/Gallery/Khoo/ThirstyThursday.jpg");
+    background-position: center 5%;
+    background-size: 120%;
+}
+
+#ui {
+    background-image: url("assets/Gallery/UI/FFHomePage.jpg");
+    background-position: center 5%;
+    background-size: 110%;
+}
+
+#comics {
+    background-image: url("assets/Gallery/Comics/AlienationS1E7.jpg");
+    background-position: top left;
+    background-size: cover;
+}
+
+#animation {
+    background-image: url("assets/DiscoDanceSprite5.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#website {
+    background-image: url("assets/Gallery/Comic Complex/about.png");
+    background-position: center;
+    background-size: contain;
+}
+
+#programming {
+    background-image: url("assets/Thumbnails/programming.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+#design {
+    background-image: url("assets/Thumbnails/PenTool.png");
+    background-position: center;
+    background-size: contain;
+}
+/* Background Images */

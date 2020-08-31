@@ -3,78 +3,42 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="./portfolio.css" />
+        <link rel="stylesheet" href="./tile-images.css"/>
+        <link rel="stylesheet" href="./panel/panel.css"/>
         <script type="text/javascript" src="./index.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Russo+One&display=swap" rel="stylesheet">
     </head>
-    <body id="program-landing">
+    <body id="program-landing" onload="populatePanels(), addEvents()">
         <div class="header">
-            <h1> Will Stiles: Programmer
-                <a class="nav" href="contact.html">Contact</a>
-            </h1>
+            <h1> Will Stiles </h1>
+            <a class="nav" href="contact.html">Contact</a>
         </div>
-        <h2 id="projects">Projects</h2>
+        <h2 id="projects">Programming Projects</h2>
         <div class="content">
             <!-- Disco Dude -->
-            <div class="accordion">
-                <button class="tile" id="disco-dude" onclick="accordion('disco-dude', 'disco-panel')">Disco Dude</button>
-                <div class="panel" id="disco-panel">
-                    <img class="left-img" alt="Disco Dude sprite" id="disco-dance-sprite" src="assets/DiscoDanceSprite5.png" onclick="window.open('https://disco-dude.netlify.app/', '_blank')">
-                    <div>
-                        <p class="left-text">
-                            <a add target="_blank" href="https://disco-dude.netlify.app/">Disco Dude</a>, a game where targets fly towards the character. 
-                            Click the yellow targets before they reach the center. 
-                            Green targets give 10 points, Blue slows target speed. Red can take a life! <br>
-                            Play the game here, <a add target="_blank" href="https://disco-dude.netlify.app/">Disco Dude</a><br>
-                            or visit the Github repository <a add target="_blank" href="https://github.com/bubbster95/DiscoDude.git">Repo Disco</a>.
-                        </p>
-                    </div>
-                </div>
+            <div class="container">
+                <div class="tile-top" id="disco-dude"></div>
+                <button class="tile-bottom" id="disco-dude-button">Disco Dude</button>              
             </div>
+            <div class="panel" id="disco-dude-panel"></div>
             <!-- Infinite Scroll-->
-            <div class="accordion">
-                <button class="tile" id="scroll" onclick="accordion('scroll', 'scroll-panel')">Infinte Scroll React</button>
-                <div class="panel" id="scroll-panel">
-                    <div>
-                        <p class="left-text">
-                            Will Stiles used React.js to create and infinite scrolling feed of "Adorable Avatars" complete with randomly generated names and interests.
-                            Follow this link to see the Infinite Scroll in action, <a href="https://wills-infinite-scroll.netlify.app/">Landing Page</a>.<br>
-                            Here is a link to the Github repo for this site. <a href="https://github.com/bubbster95/Infinte-Scroll.git">Infinite Scroll Repo</a>
-                        </p>
-                    </div>
-                    <img class="left-img"  alt="Infinte Scroll screenshot" src="assets/Gallery/InfniteScroll.png" onclick="window.open('assets/Gallery/InfniteScroll.png', '_blank')">
-                </div>
+            <div class="container">
+                <div class="tile-top" id="scroll"></div>
+                <button class="tile-bottom" id="scroll-button">Infinte Scroll React</button>
             </div>
+            <div class="panel" id="scroll-panel"></div>
             <!-- Wood Turners Calculator-->
-            <div class="accordion">
-                <button class="tile" id="segmented" onclick="accordion('segmented', 'segmented-panel')">Turners Calculator</button>
-                <div class="panel" id="segmented-panel">
-                    <img class="left-img"  alt="Creation Panel" src="assets/Gallery/CreationPanel.jpg" onclick="window.open('assets/Gallery/CreationPanel.jpg', '_blank')">
-                    <img class="left-img"  alt="Blue Print" src="assets/Gallery/BluePrint.png" onclick="window.open('assets/Gallery/BluePrint.png', '_blank')">
-                    <img class="left-img"  alt="Segmented Bowl" src="assets/Gallery/Segmented.jpg" onclick="window.open('assets/Gallery/Segmented.jpg', '_blank')">
-                    <div>
-                        <p class="left-text">
-                            As a wood worker, Will uses geometry often. To simplify the process of designing segmented rings Will created this responsive HTML5 app. (Segmented Rings: Wood rings composed of trapazoids) <a href="https://wood-turners-calculator.netlify.app">Landing Page</a>.<br>
-                            Here is a link to the Github repo for this site. <a href="https://github.com/bubbster95/segmented-ring-calculator">Wood Turners Calculator Repo</a>
-                        </p>
-                    </div>
-                </div>
+            <div class="container">
+                <div class="tile-top" id="turner" ></div>
+                <button class="tile-bottom" id="turner-button">Turners Calculator</button>  
             </div>
+            <div class="panel" id="turner-panel"></div>
             <!-- Portfolio Site -->
-            <div class="accordion">
-                <button class="tile" id="portfolio" onclick="accordion('portfolio', 'portofolio-panel')">Portfolio Site</button>
-                <div class="panel" id="portofolio-panel">
-                    <div>
-                        <p class="left-text">
-                            Will Stiles created this portfolio site using HTML5, CSS, and JS.
-                            This site has two sides:<br><br>
-                            <span>&#8226;</span> Design <br>
-                            <span>&#8226;</span> Programming <br><br>
-                            Follow this link to see both, <a href="index.html">Landing Page</a>.<br>
-                            Here is a link to the Github repo for this site. <a href="https://github.com/bubbster95/Portfolio-Site.git">Portfolio Repo</a>
-                        </p>
-                    </div>
-                    <img class="left-img" alt="Portfolio site screenshot" src="assets/Gallery/PortfolioDesign.jpg" onclick="window.open('assets/Gallery/PortfolioDesign.jpg', '_blank')">
-                </div>
+            <div class="container">
+                <div class="tile-top" id="portfolio" ></div>
+                <button class="tile-bottom" id="portfolio-button">Portfolio Site</button>  
             </div>
+            <div class="panel" id="portfolio-panel"></div>
         </div>
     </body>
 </html>

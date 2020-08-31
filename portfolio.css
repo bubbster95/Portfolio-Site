@@ -1,12 +1,21 @@
-html, body {
-    width: 100%;
+html, body { 
+    position: absolute;
     height: 100%;
+    width: 100%;
     margin: 0px;
     padding: 0px;
     overflow-x: hidden; 
 }
 
-h1, .active, .tile:hover, .landing-tile:hover, a:hover, .nav {
+.header {
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    height: 6vh;
+    background-color: #4197CA;
+}
+
+.landing-tile:hover, .nav, .tile-bottom:hover {
     color: white;
     background-color: #4197CA;
     outline: none;
@@ -16,8 +25,8 @@ h1, h3, h4, .contact-text, .contact-title, p {
     text-align: left;
 }
 
-h1, h3, h2, .tile, .active, .nav {
-    font-family: impact;
+h1, h3, h2, .nav, .tile-bottom {
+    font-family: 'Russo One', sans-serif;
 }
 
 h2, .content, .panel {
@@ -25,20 +34,16 @@ h2, .content, .panel {
 }
 
 h4, p, li {
-    font-family: tahoma;
+    font-family: 'Do Hyeon', sans-serif;;
     font-size: 2vw;
 }
 
 h1 {
-    margin: 0px;
-    font-size: 5vw;
-    padding-left: 15px;
     position: fixed;
-    width: 100%;
-}
-
-h1 > .smaller {
-    font-size: 3vw
+    color: white;
+    margin: 0;
+    font-size: 35px;
+    padding-left: 15px;
 }
 
 h2 {
@@ -63,7 +68,7 @@ p {
 .nav {
     position: relative;
     left: -25px;
-    top: 8px;
+    top: -5vh;
     float: right; 
     font-size: 3vw;
 }
@@ -71,6 +76,10 @@ p {
 a {
     color: #4197CA;
     text-decoration: none;
+}
+
+a:hover {
+    color: black;
 }
 
 .contact-title, .include, h4, h3 {
@@ -101,22 +110,36 @@ a {
     width: 100%;
 }
 
-.landing {
+
+/* Tile CSS Start */
+
+#landing {
     justify-content: center;
     margin: 10% 5% 0% 5%;
 }
 
-.accordion {
+.container {
     margin-left: 2%;
     margin-right: 2%;
     margin-bottom: 4%;
 }
 
-.tile {
+.tile-bottom {
+    box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.5);
+    display: none;
+}
+.tile-bottom {
+    background-color: #4197CA;
+}
+
+.tile-top {
+    background-color: #90ECCA;
+}
+
+.tile-bottom, .tile-top{
     cursor: pointer;
     transition: .5s;
     color: #4197CA;
-    background-color: #90ECCA;
     font-size: 5vh;
     border-color: rgba(0, 0, 0, 0);
     border-radius: 15px;
@@ -124,60 +147,76 @@ a {
     width: 50vh;
 }
 
-.active:hover{
-    color: #4197CA;
-    background-color: #90ECCA;
+.tile-top:hover {
+    animation-name: top-hover;
+    animation-duration: 1s;
 }
 
-.active {
-    font-size: 30px;
-    height: 40px;
-    width: 70vw;
-    border-radius: 10px 10px 0px 0px;
-    border-color: rgba(0, 0, 0, 0);
-    margin: auto !important;
-    margin-left: 2%;
-    margin-right: 2%;
-    animation-name: active-animation;
-    animation-duration: .4s;
+@keyframes top-hover {
+    100% {box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.5); background-position: 100% 100%;}
 }
 
-@keyframes active-animation {
-    0%   {height: 70vw; width:40vh; font-size: 0px;}
-    100% {width:70vw; font-size: 0px;}
-}
 
-@keyframes accordion-panel {
-    0%   {height: 0; font-size: 0; opacity: 0;}
-    50%  {height: 0; font-size: 0; opacity: 0;}
-    100% {font-size: 0px; opacity: 100%;}
-}
+/* Tile CSS End */
 
 .panel {
-    margin: auto;
-    margin-bottom: 20px;
-    border-radius: 0px 0px 10px 10px;
-    background-color: #90ECCA;
-    width: 70vw;
-    height: 35vw;
+    position: fixed;
+    top: 0;
+    z-index: 20;
+    background-color: black;
+    width: 100%;
+    height: 100%;
     display: none;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    animation-name: accordion-panel;
-    animation-duration: .8s;
+    overflow: auto;
 }
 
-@media only screen and (max-width: 600px) {   
-    #projects { visibility: hidden; }
+.closePanel {
+    position: fixed;
+    top: 1%;
+    right: 1%;
+    z-index: 4;
+}
+
+.display {
+    margin: 20px;
+}
+
+.description {
+    height: 50vh;
+}
+
+.description > p {
+    font-size: 100%;
+}
+
+/* .img, .left-img {
+    cursor: pointer;
+    padding: 1.5%;
+    height: 50vh;
+} */
+
+/* .left-img {
+    float: left;
+} */
+
+.video {
+    margin-left: 2%;
+}
+
+#profile {
+    rotate: 90;
+}
+
+@media only screen and (max-width: 600px) { 
     .content { margin-top: 40px; }
 
-    .tile {
+    .tile-bottom, .tile-top {
         height: 40vh;
         width: 40vh;
     }
 
     h1 {
-        font-size: 5vw;
+        /* font-size: 5vw; */
         padding-bottom: 3px;
     }
 
@@ -185,24 +224,4 @@ a {
         font-size: 5vw;
         top: 0;
     }
-}
-
-#profile {
-    rotate: 90;
-}
-
-.img, .left-img {
-    cursor: pointer;
-    padding: 1.5%;
-    height: 33vw;
-}
-
-.left-img {
-    margin-left: 5%;
-    margin-top: 0%;
-    float: left;
-}
-
-.video {
-    margin-left: 2%;
 }
