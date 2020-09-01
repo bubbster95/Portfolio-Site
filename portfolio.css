@@ -11,7 +11,7 @@ html, body {
     position: fixed;
     z-index: 10;
     width: 100%;
-    height: 6vh;
+    height: 40px;
     background-color: #4197CA;
 }
 
@@ -47,13 +47,13 @@ h1 {
 }
 
 h2 {
-    padding-top: 2vw;
+    padding-top: 4vw;
     font-size: 5vw;
     color: #08659C;
 }
 
 h3 {
-    font-size: 3vw;
+    font-size: 30px;
 }
 
 p {
@@ -68,9 +68,9 @@ p {
 .nav {
     position: relative;
     left: -25px;
-    top: -5vh;
+    /* top: 1vh; */
     float: right; 
-    font-size: 3vw;
+    font-size: 20px;
 }
 
 a {
