@@ -1,19 +1,19 @@
 const objArr = {
     disco: [
-        ['DiscoDancer', 
-        'assets/DiscoDanceSprite5.png',
-        'This is a dancing guy',
-        'gif of guy dancing'
+        ['Disco Dude', 
+        'assets/Thumbnails/disco-dude.gif',
+        'As a first project Will created the HTML5 video game Disco Dude. This character Strikes a pose everytime you eliminate a target.',
+        'Gif of dude dancing'
         ],
-        ['Disco Dancer Two',
-        'assets/DiscoDanceSprite5.png',
-        'This is a dancing guy again',
-        'gif of guy dancing'
+        ['Disco Targets',
+        'assets/Gallery/DiscoDude/Target.gif',
+        'These targets fly towards the disco dude. Yellow is most common and takes a life after reaching the middle. Red takes a life if you hit it. Green adds ten points to the score but speeds up the game. Blue knocks down the speed.',
+        'Gif of four targets'
         ],
-        ['Disco Dancer Three',
-        'assets/DiscoDanceSprite5.png',
-        'This is a dancing guy again again',
-        'gif of guy dancing'
+        ['Disco Dance Floor',
+        'assets/Gallery/DiscoDude/DiscoFloor.gif',
+        'Disco Dude can\'t simply dance in an empty room. He needs a packed house to cheer him on.',
+        'Gif of a disco floor'
         ]
     ],
     scroll: [
@@ -220,7 +220,7 @@ populatePanels = () => {
             slide.id = j;
             thisPanel.appendChild(slide);
             // Add Title
-            let title = document.createElement('P');
+            let title = document.createElement('DIV');
             title.className = 'image-title';
             title.innerHTML = thisObject[j][0];
             slide.appendChild(title);

@@ -1,11 +1,11 @@
 /* Backgroung Images */
 #turner {
-    background-image: url("assets/Thumbnails/WebVase2.jpg");
+    background-image: url("assets/Thumbnails/TurnersThumbnail.png");
     background-position: top left;
     background-size: cover;
 }
 #disco-dude {
-    background-image: url("assets/DiscoDanceSprite5.png");
+    background-image: url("assets/Thumbnails/disco-dude.gif");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -28,8 +28,8 @@
 }
 
 #khoo {
-    background-image: url("assets/Gallery/Khoo/ThirstyThursday.jpg");
-    background-position: center 5%;
+    background-image: url("assets/Thumbnails/Khoo Style.png");
+    background-position: center;
     background-size: 120%;
 }
 
@@ -46,7 +46,7 @@
 }
 
 #animation {
-    background-image: url("assets/DiscoDanceSprite5.png");
+    background-image: url("assets/Thumbnails/disco-dude.gif");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;

@@ -1,31 +1,39 @@
 html, body { 
     position: absolute;
-    height: 100%;
-    width: 100%;
     margin: 0px;
     padding: 0px;
     overflow-x: hidden; 
 }
 
+body {
+    background-image: url('assets/Gallery/TestTile.jpg');
+    background-size: 15px;
+    background-position: center;
+}
+
+html, body, .header, .content, .panel, #projects {
+    width: 100%;
+}
+
+html, body, p, .panel, .content {
+    height: 100%;
+}
+
 .header {
     position: fixed;
     z-index: 10;
-    width: 100%;
     height: 40px;
-    background-color: #4197CA;
 }
 
-.landing-tile:hover, .nav, .tile-bottom:hover {
-    color: white;
-    background-color: #4197CA;
+.landing-tile:hover, .contact-button, .tile-bottom:hover {
     outline: none;
 }
 
-h1, h3, h4, .contact-text, .contact-title, p {
+h1, h3, h4, p, .contact-text, .contact-title {
     text-align: left;
 }
 
-h1, h3, h2, .nav, .tile-bottom {
+h1, h3, h2, .contact-button, .tile-bottom, .closePanel {
     font-family: 'Russo One', sans-serif;
 }
 
@@ -33,14 +41,60 @@ h2, .content, .panel {
     text-align: center;
 }
 
-h4, p, li {
-    font-family: 'Do Hyeon', sans-serif;;
-    font-size: 2vw;
+p, .image-title {
+    font-family: 'Do Hyeon', sans-serif;
+}
+
+p {
+    overflow: auto;
+}
+
+h1, .landing-tile:hover, .contact-button, .tile-bottom:hover, .image-title, .closePanel, .description, h4, h3, p, .contact-title {
+    color: white;
+}
+
+a, .tile-bottom, .tile-top, h2 {
+    color: #08659C;
+}
+
+a:hover, .closePanel:hover {
+    color: black;
+}
+
+.tile-bottom, .tile-top {
+    border-color: rgba(0, 0, 0, 0);
+}
+
+.content-grid {
+    background-image: linear-gradient(to bottom, rgba(8, 101, 156, 9), rgba(65, 152, 202, .8));
+}
+.header {
+    background-image: linear-gradient(to bottom, rgba(8, 101, 156, 9), rgba(65, 152, 202, .5));
+}
+
+.panel {
+    background-image: linear-gradient(to bottom, rgba(8, 101, 156, 9), rgba(65, 152, 202, .1));
+}
+
+.landing-tile:hover, .tile-bottom:hover, .tile-bottom, .tile-top {
+    background-color: #08659C;
+}
+
+.panel {
+    background-color: black;
+}
+
+.closePanel {
+    background-color: rgba(0,0,0,0);
+}
+
+.closePanel:hover {
+    background-color: white;
+
 }
 
 h1 {
     position: fixed;
-    color: white;
     margin: 0;
     font-size: 35px;
     padding-left: 15px;
@@ -49,65 +103,33 @@ h1 {
 h2 {
     padding-top: 4vw;
     font-size: 5vw;
-    color: #08659C;
 }
 
 h3 {
-    font-size: 30px;
+    font-size: 3vh;
 }
 
 p {
-    margin: 10px;
-    width: 40vw;
-    height: 100%;
+    font-size: 2vh;
     overflow: auto;
     display: inline-block;
-    color: #08659C;
 }
 
-.nav {
-    position: relative;
-    left: -25px;
-    /* top: 1vh; */
-    float: right; 
+.contact-button {
+    position: absolute;
+    right: 10px;
+    margin-top: 10px;
     font-size: 20px;
 }
 
 a {
-    color: #4197CA;
     text-decoration: none;
-}
-
-a:hover {
-    color: black;
-}
-
-.contact-title, .include, h4, h3 {
-    margin-left: 7%;
-    margin-bottom: 0%;
-    margin-top: 0%;
-    width: 100%;
-    color: #08659C;
-}
-
-.contact-title {
-    margin-top: 10vw;
-}
-
-.contact-will {
-    margin-top: 7vw;
-}
-
-.include {
-    display: inline;
 }
 
 .content {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    height: 100%;
-    width: 100%;
 }
 
 
@@ -125,46 +147,26 @@ a:hover {
 }
 
 .tile-bottom {
-    box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.5);
+    box-shadow: 4px 4px 2px rgba(5, 50, 125, 0.5);
     display: none;
-}
-.tile-bottom {
-    background-color: #4197CA;
-}
-
-.tile-top {
-    background-color: #90ECCA;
 }
 
 .tile-bottom, .tile-top{
     cursor: pointer;
     transition: .5s;
-    color: #4197CA;
     font-size: 5vh;
-    border-color: rgba(0, 0, 0, 0);
-    border-radius: 15px;
-    height: 50vh;
-    width: 50vh;
+    border-radius: 5px;
+    height: 40vh;
+    width: 40vh;
+    margin: 20px;
 }
-
-.tile-top:hover {
-    animation-name: top-hover;
-    animation-duration: 1s;
-}
-
-@keyframes top-hover {
-    100% {box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.5); background-position: 100% 100%;}
-}
-
-
 /* Tile CSS End */
+
 
 .panel {
     position: fixed;
     top: 0;
     z-index: 20;
-    background-color: black;
-    width: 100%;
     height: 100%;
     display: none;
     overflow: auto;
@@ -172,56 +174,105 @@ a:hover {
 
 .closePanel {
     position: fixed;
-    top: 1%;
-    right: 1%;
+    top: 5px;
+    right: 5px;
     z-index: 4;
+    border: solid;
+    border-radius: 5px;
+    border-width: 1px;
+    transition: 0.6s ease;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
-.display {
-    margin: 20px;
+
+/* Contact Page */
+.content-grid {
+    position: absolute;
+    top: 50px;
+    left: 10px;
+    right: 10px;
+    display: grid;
+    grid-gap: 2vh;
+    grid-template-rows: 8vh 40vh 20vh;
+    grid-template-columns: 40vh 40vh;
+    grid-template-areas:
+    'title title' 
+    'image body'
+    'info info';
+    align-items: start;
+    justify-items: start;
 }
 
-.description {
-    height: 50vh;
+.contact-title {
+    font-size: 5vh;
+    justify-self: center;
+    align-self: center;
+    grid-area: title;
+}
+.contact-title, h3, .contact-info, .contact-text, .profile {
+    padding: 0%;
 }
 
-.description > p {
-    font-size: 100%;
+h3 {
+    letter-spacing: 2px;
 }
 
-/* .img, .left-img {
-    cursor: pointer;
-    padding: 1.5%;
-    height: 50vh;
-} */
-
-/* .left-img {
-    float: left;
-} */
-
-.video {
-    margin-left: 2%;
+h3, .contact-text {
+    margin: 0% 4%;
 }
 
-#profile {
-    rotate: 90;
+.contact-info {
+    grid-area: info;
 }
+
+.contact-text {
+    width: 100%;
+    font-size: 3vh;
+}
+
+.profile-body {
+    grid-area: body;
+    align-self: center;
+    justify-self: start;
+}
+
+.profile {
+    position: relative;
+    grid-area: image;
+    height: 40vh;
+    width: 40vh;
+    background-image: url('assets/Gallery/Profile.jpg');
+    background-size: cover;
+    background-position: center;
+}
+/* Contact Page End */
 
 @media only screen and (max-width: 600px) { 
-    .content { margin-top: 40px; }
-
-    .tile-bottom, .tile-top {
-        height: 40vh;
-        width: 40vh;
+    .content-grid {
+        grid-gap: 10px;
+        display: grid;
+        grid-template-rows: 8vh 40vh 40vh 20vh;
+        grid-template-columns: 90vw;
+        grid-template-areas:
+        'title' 
+        'image'
+        'body'
+        'info';
+        align-items: center;
+        justify-items: center;
+    }
+    .contact-title, .contact-text, .contact-info, h3, h4, p {
+        text-align: center;
+    }
+    .profile-body {
+        justify-self: center;
     }
 
-    h1 {
-        /* font-size: 5vw; */
-        padding-bottom: 3px;
-    }
+    .content { margin-top: 10px; }
 
-    .nav {
-        font-size: 5vw;
-        top: 0;
-    }
+    .tile-bottom, .tile-top { height: 40vh; width: 40vh; }
+
+    h1 { padding-bottom: 3px; }
 }
