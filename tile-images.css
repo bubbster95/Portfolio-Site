@@ -1,22 +1,22 @@
 /* Backgroung Images */
 #turner {
-    background-image: url("assets/Thumbnails/TurnersThumbnail.png");
+    background-image: url("assets/Thumbnails/TurnersGif.gif");
     background-position: top left;
     background-size: cover;
 }
 #disco-dude {
-    background-image: url("assets/Thumbnails/disco-dude.gif");
+    background-image: url("assets/Thumbnails/DiscoGif.gif");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
 }
 #scroll {
-    background-image: url("assets/Gallery/websites/InfniteScroll.png");
+    background-image: url("assets/Thumbnails/InfiniteScroll.gif");
     background-position: top left;
     background-size: cover;
 }
 #portfolio {
-    background-image: url("assets/Gallery/websites/PortfolioDesign.jpg");
+    background-image: url("assets/Thumbnails/PortfolioGif.gif");
     background-position: top left;
     background-size: cover;
 }

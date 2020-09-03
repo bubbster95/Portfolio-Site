@@ -81,8 +81,8 @@ a:hover, .closePanel:hover {
     background-image: linear-gradient(to bottom, rgba(8, 101, 156, 9), rgba(65, 152, 202, .1));
 }
 
-.landing-tile:hover, .tile-bottom:hover, .tile-bottom, .tile-top {
-    background-color: #08659C;
+.landing-tile:hover, .tile-bottom, .tile-top, .closePanel:hover {
+    background-color: white;
 }
 
 .panel {
@@ -93,8 +93,8 @@ a:hover, .closePanel:hover {
     background-color: rgba(0,0,0,0);
 }
 
-.closePanel:hover {
-    background-color: white;
+.tile-bottom:hover {
+    background-color: #08659C;
 
 }
 
