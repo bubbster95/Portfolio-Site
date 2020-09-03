@@ -5,11 +5,16 @@ html, body {
     overflow-x: hidden; 
 }
 
-body {
-    background-image: url('assets/Gallery/TestTile.jpg');
-    background-size: 15px;
+html {
+    background-image: url('assets/Gallery/Milky-Way.jpg');
+    background-size: cover;
     background-position: center;
 }
+
+body {
+    background-image: linear-gradient(to bottom, rgb(255, 255, 255), rgba(2, 31, 44, 0));
+}
+
 
 html, body, .header, .content, .panel, #projects {
     width: 100%;
@@ -135,9 +140,12 @@ a {
 
 /* Tile CSS Start */
 
+#landing-content {
+    margin-top: 15%;
+}
 #landing {
     justify-content: center;
-    margin: 10% 5% 0% 5%;
+    margin: 0% 5% 0% 5%;
 }
 
 .container {
@@ -147,7 +155,7 @@ a {
 }
 
 .tile-bottom {
-    box-shadow: 4px 4px 2px rgba(5, 50, 125, 0.5);
+    box-shadow: 4px 4px 2px rgb(0, 0, 0);
     display: none;
 }
 
