@@ -18,9 +18,19 @@ const objArr = {
     ],
     scroll: [
         ['Infinite Scroll',
-        'assets/Gallery/websites/InfniteScroll.png',
+        'assets/Gallery/InfiniteScroll/InfiniteScroll.png',
         'This project is an introduction to React using the "Infinite Scroll" prompt provided by Pramp',
         'Screen Shot of Infinite Scroll landng page'
+        ],
+        ['Infinite Profiles',
+        'assets/Gallery/InfiniteScroll/Profile1.png',
+        'There is an infinite number of profiles. Scrolling to the bottom of the page appends more.',
+        'Screen Shot of Infinite Scroll avatar 3'
+        ],
+        ['Infinite Names and Interests',
+        'assets/Gallery/InfiniteScroll/Profile2.png',
+        'Each Profile comes with a name and three things this profile likes most. Both the name and likes are genereated with the help of two objects.',
+        'Screen Shot of Infinite Scroll avatar 2'
         ]
     ],
     turner: [
@@ -212,7 +222,6 @@ populatePanels = () => {
 
         let thisObjectId = thisPanel.id.slice(0, thisPanel.id.match(/[\\-]/).index);
         let thisObject = objArr[thisObjectId]
-        console.log(thisObject)
         for (j = 0; j < thisObject.length; j++) {
             // Ad Slide
             let slide = document.createElement('DIV');
@@ -242,7 +251,6 @@ populatePanels = () => {
             //Add Dot
             let dot = document.createElement('SPAN');
             dot.className = 'dot';
-            console.log(j, "yo")
             dot.addEventListener('click', function() {currentSlide(parseInt(slide.id)+1, thisPanel); });
             dotDiv.appendChild(dot);
             //Add Description
@@ -283,13 +291,29 @@ showSlides = (n, panel) => {
 /* End Panel Controls */
 
 
+let tiles = document.getElementsByClassName('tile-top');
+
 popUp = (e) => {
     let panel = document.getElementById(e.target.id.slice(0, -7) + "-panel");
+
+    for (i = 0; i < tiles.length; i++) {
+        let tile = getComputedStyle(tiles[i]);
+        let clipUrl = tile.getPropertyValue('background-image').slice(0, -5);
+        tiles[i].style.backgroundImage = clipUrl;
+        console.log(clipUrl)
+    }
     panel.style.display = 'block';
     showSlides(1, panel);
 }
 
-closePopUp = (e) => e.target.parentNode.style.display = 'none';
+closePopUp = (e) => {
+    for (i = 0; i < tiles.length; i++) {
+        let tile = getComputedStyle(tiles[i]);
+        let clipUrl = tile.getPropertyValue('background-image').slice(0, -2);
+        tiles[i].style.backgroundImage = clipUrl + 'gif")';
+    }
+    e.target.parentNode.style.display = 'none';
+}
 
 addEvents = () => {
     let array = document.getElementsByClassName('container')
