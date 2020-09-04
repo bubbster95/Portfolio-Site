@@ -282,36 +282,23 @@ showSlides = (n, panel) => {
     // Change Dots
     let dots = panel.getElementsByClassName("dot");
     for (i = 0; i < dots.length; i++) {
-    console.log(dots[i].id);
         dots[i].id = '';
     }
     dots[slideIndex-1].id += "active";
-    console.log(dots[slideIndex-1].id);
 }
 /* End Panel Controls */
 
 
 let tiles = document.getElementsByClassName('tile-top');
+let pausedTiles = document.getElementsByClassName('stop-gif');
 
 popUp = (e) => {
     let panel = document.getElementById(e.target.id.slice(0, -7) + "-panel");
-
-    for (i = 0; i < tiles.length; i++) {
-        let tile = getComputedStyle(tiles[i]);
-        let clipUrl = tile.getPropertyValue('background-image').slice(0, -5);
-        tiles[i].style.backgroundImage = clipUrl;
-        console.log(clipUrl)
-    }
     panel.style.display = 'block';
     showSlides(1, panel);
 }
 
 closePopUp = (e) => {
-    for (i = 0; i < tiles.length; i++) {
-        let tile = getComputedStyle(tiles[i]);
-        let clipUrl = tile.getPropertyValue('background-image').slice(0, -2);
-        tiles[i].style.backgroundImage = clipUrl + 'gif")';
-    }
     e.target.parentNode.style.display = 'none';
 }
 

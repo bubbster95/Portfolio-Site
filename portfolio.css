@@ -162,10 +162,10 @@ a {
 .tile-bottom, .tile-top{
     cursor: pointer;
     transition: .5s;
-    font-size: 5vh;
+    font-size: 1.5em;
     border-radius: 5px;
-    height: 40vh;
-    width: 40vh;
+    height: 30vh;
+    width: 30vh;
     margin: 20px;
 }
 /* Tile CSS End */
@@ -256,6 +256,13 @@ h3, .contact-text {
     background-position: center;
 }
 /* Contact Page End */
+
+@media only screen and (min-width: 800px) {
+    .content {
+        width: 70%;
+        margin: auto;
+    }
+}
 
 @media only screen and (max-width: 600px) { 
     .content-grid {

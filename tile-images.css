@@ -11,7 +11,7 @@
     background-repeat: no-repeat;
 }
 #scroll {
-    background-image: url("assets/Thumbnails/InfiniteScroll.gif");
+    background-image: url("assets/Thumbnails/InfinityGif.gif");
     background-position: top left;
     background-size: cover;
 }
