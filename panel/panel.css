@@ -23,7 +23,7 @@
   /* margin: 10px; */
 }
 
-.img {
+.img, .img-link {
   grid-area: image;
   align-self: center;
   z-index: 0;

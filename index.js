@@ -2,57 +2,73 @@ const objArr = {
     disco: [
         ['Disco Dude', 
         'assets/Thumbnails/disco-dude.gif',
-        'As a first project Will created the HTML5 video game Disco Dude. This character Strikes a pose everytime you eliminate a target.',
-        'Gif of dude dancing'
+        'As a first project Will created the HTML5 video game Disco Dude. This character Strikes a pose everytime you eliminate a target. Click this link to see the git hub repo for this project <a href="https://github.com/bubbster95/DiscoDude" target="_blank">link</a>.',
+        'Gif of dude dancing',
+        'https://disco-dude.netlify.app'
         ],
         ['Disco Targets',
         'assets/Gallery/DiscoDude/Target.gif',
         'These targets fly towards the disco dude. Yellow is most common and takes a life after reaching the middle. Red takes a life if you hit it. Green adds ten points to the score but speeds up the game. Blue knocks down the speed.',
-        'Gif of four targets'
+        'Gif of four targets',
+        'https://disco-dude.netlify.app'
         ],
         ['Disco Dance Floor',
         'assets/Gallery/DiscoDude/DiscoFloor.gif',
         'Disco Dude can\'t simply dance in an empty room. He needs a packed house to cheer him on.',
-        'Gif of a disco floor'
-        ]
-    ],
-    scroll: [
-        ['Infinite Scroll',
-        'assets/Gallery/InfiniteScroll/InfiniteScroll.png',
-        'This project is an introduction to React using the "Infinite Scroll" prompt provided by Pramp',
-        'Screen Shot of Infinite Scroll landng page'
+        'Gif of a disco floor',
+        'https://disco-dude.netlify.app'
         ],
-        ['Infinite Profiles',
-        'assets/Gallery/InfiniteScroll/Profile1.png',
-        'There is an infinite number of profiles. Scrolling to the bottom of the page appends more.',
-        'Screen Shot of Infinite Scroll avatar 3'
-        ],
-        ['Infinite Names and Interests',
-        'assets/Gallery/InfiniteScroll/Profile2.png',
-        'Each Profile comes with a name and three things this profile likes most. Both the name and likes are genereated with the help of two objects.',
-        'Screen Shot of Infinite Scroll avatar 2'
+        ['Disco Stage Set',
+        'assets/Gallery/DiscoDude/DiscoDudeOnStage.png',
+        'If you are interested in checking this game out for yourself, click this image above or this <a href="https://disco-dude.netlify.app" target="_blank">link</a>.',
+        'Screen shot of Disco Dude',
+        'https://disco-dude.netlify.app'
         ]
     ],
     turner: [
         ['Turner\'s Calculator Web Browser',
         'assets/Gallery/turners-calculator/WebVase.png',
-        'This is the turner\'s calculator. An HTML5 program built to calculate segmented rings for wood workers.',
-        'Screen shot of Turner\'s Calculator web browser layout'
+        'This is the turner\'s calculator. An HTML5 program built to calculate segmented rings for wood workers. Follow this <a href="https://wood-turners-calculator.netlify.app/" target="_blank">link</a> to check it out. If you are interested in viewing the code, this <a href="https://github.com/bubbster95/segmented-ring-calculator" target="_blank">link</a> takes you too the github repo',
+        'Screen shot of Turner\'s Calculator web browser layout',
+        'https://wood-turners-calculator.netlify.app/'
         ],
         ['Turner\'s Calculator Mobile Browser',
         'assets/Gallery/turners-calculator/VaseMobile.png',
         'The turner\'s calculator was built to work on all devices making it easy to use in the wood shop.',
-        'Screen shot of Turner\'s Calculator mobile browser layout'
+        'Screen shot of Turner\'s Calculator mobile browser layout',
+        'https://wood-turners-calculator.netlify.app/'
         ],
         ['Blueprint Table',
         'assets/Gallery/turners-calculator/WebBluePrints.png',
         'After submitting your completed design, the Turner\'s calculator will provide a detailed list of all dimensions needed for every ring created. Using these dimensions to cut your lumber creates the trapezoides needed to build your segmented rings.',
-        'Screen shot of blueprints'
+        'Screen shot of blueprints',
+        'https://wood-turners-calculator.netlify.app/'
         ],
         ['Print Preview',
         'assets/Gallery/turners-calculator/PrintPreview.png',
         'The last step is to print your blueprints. Blueprints include the table of measurments as well as Trapizoids that can be used to trace your design.',
-        'Screen shot of Trapezoides print preview'
+        'Screen shot of Trapezoides print preview',
+        'https://wood-turners-calculator.netlify.app/'
+        ]
+    ],
+    scroll: [
+        ['Infinite Scroll',
+        'assets/Gallery/InfiniteScroll/InfiniteScroll.png',
+        'This project is an introduction to React using the "Infinite Scroll" prompt provided by Pramp. To visit the site click this <a href="https://wills-infinite-scroll.netlify.app/" target="_blank">link</a>. To read the code visit this <a href="https://github.com/bubbster95/Infinte-Scroll" target="_blank">link</a>.',
+        'Screen Shot of Infinite Scroll landng page',
+        'https://wills-infinite-scroll.netlify.app/'
+        ],
+        ['Infinite Profiles',
+        'assets/Gallery/InfiniteScroll/Profile 1.png',
+        'There is an infinite number of profiles. Scrolling to the bottom of the page appends more.',
+        'Screen Shot of Infinite Scroll avatar 1',
+        'https://wills-infinite-scroll.netlify.app/'
+        ],
+        ['Infinite Names and Interests',
+        'assets/Gallery/InfiniteScroll/Profile2.png',
+        'Each Profile comes with a name and three things this profile likes most. Both the name and likes are genereated with the help of two objects.',
+        'Screen Shot of Infinite Scroll avatar 2',
+        'https://wills-infinite-scroll.netlify.app/'
         ]
     ],
     portfolio: [
@@ -65,38 +81,45 @@ const objArr = {
     motif: [
         ['Motif Food Issue Cover',
         'assets/Gallery/Motif/FoodCover.jpg',
-        'Motif Magazine employs Will as a freelance designer and wordpress developer. This Image is cover art done by Will during his time as lead designer at Motif Magazine.',
-        'Motif Food Issue Cover'
+        'Motif Magazine employs Will as a freelance designer and wordpress developer. This Issue of Motif was created by Will during his time as lead designer at Motif Magazine. *Id Publish Online feature produces unfortunate artifacts not represented in the final print of each issue.',
+        'Motif Food Issue Cover',
+        'https://indd.adobe.com/view/9c26a979-cf26-45f9-96a9-9fcfd267d14d'
         ],
         ['Cannabis Issue, Eating Spread',
         'assets/Gallery/Motif/CannabisEating.jpg',
-        'The Eating section was one of many in the magazine that required special detail and consideration each issue. This issue\'s theme was Cannabis.',
-        'Cannabis Issue Eating Spread'
+        'The Eating section, one of motif\'s subsections, which require a special visual treatment. This issue\'s theme was Cannabis, to read the issue click the image above.',
+        'Cannabis Issue Eating Spread',
+        'https://indd.adobe.com/view/8720e976-0198-4b0b-9893-742b5e699749'
         ],
         ['Tiny Lobster Article',
         'assets/Gallery/Motif/TinyLobster.jpg',
-        'While Will was the lead designer each issue had a back page devoted to telling a story with images. This issue, Will wrote an article about creating the cover.',
-        'Tiny Lobster back story'
+        'While Will was the lead designer each issue had a back page devoted to telling a story with images. This issue, Will wrote an article about creating the cover. Read the issue by clicking the image above.',
+        'Tiny Lobster back story',
+        'https://indd.adobe.com/view/9c26a979-cf26-45f9-96a9-9fcfd267d14d'
         ],
         ['A Taste of Ireland',
         'assets/Gallery/Motif/Centerspread.jpg',
-        'Will designed a unique centerspread graphic spanning two pages each issue. This centerspread focuses on the beauty of ireland as told by the native irish author and his photography.',
-        'Motif Spring guide centerspread'
+        'Will designed a unique centerspread graphic spanning two pages each issue. This centerspread focuses on the beauty of Ireland as told by the native irish author and his photography. Find this centerspread by clicking the image to read more.',
+        'Motif Spring guide centerspread',
+        'https://indd.adobe.com/view/8a081028-feae-4e76-9c7b-81c4ba0f124a'
         ],
         ['A Taste of Antarctica',
         'assets/Gallery/Motif/AntarcticaSpread.jpg',
         'This centerspread highlights the beauty of Antarctica. While supporting the story being told by the authors.',
-        'Motif Spring guide centerspread'
+        'Motif Spring guide centerspread',
+        'https://indd.adobe.com/view/f4444bf0-704e-4840-88c5-e25f223a1cf7'
         ],
         ['Hot Rods Photo Bash',
         'assets/Gallery/Motif/HotRods.jpg',
         'Will was often given a folder of photos to create a one page composition to close out each issue of Motif. This one was all hot rods from a local car show.',
-        'Hot Rod Photo Bash'
+        'Hot Rod Photo Bash',
+        'https://indd.adobe.com/view/81200c61-0434-4e1b-b15d-30dcbc61a7b0'
         ],
         ['Whale Guitar Photo Bash',
         'assets/Gallery/Motif/WhaleGuitar.jpg',
         'This photo bash tells the story of a local peice of art the comes in the form of a guitar.. and a whale.',
-        'Whale Guitar Photo Bash'
+        'Whale Guitar Photo Bash',
+        'https://indd.adobe.com/view/f4444bf0-704e-4840-88c5-e25f223a1cf7'
         ]
     ],
     khoo: [
@@ -161,32 +184,62 @@ const objArr = {
         ]
     ],
     animation: [
+        ['Disco Dude Character Animation',
+        'assets/Gallery/DiscoDude/disco-dude.gif',
+        'As a programmer createing a video game, having a background in animation comes in handy. Will demonstrated this for his HTML5 game Disco Dude. Click the gif above or this <a href="https://disco-dude.netlify.app" target="_blank">link</a> to play the game.',
+        'Gif of a Disco Dancer',
+        'https://disco-dude.netlify.app'
+        ],
+        ['Venga Phone Animation',
+        'assets/Gallery/Animation/Venga Climb.mp4',
+        'Venga Climb needed animations of a phone with their app on it. Using blender Will was able to create several clips to meet their needs. watch timestamps 00:10, 1:20, end 1:38 so see the phone fly into action',
+        'Venda Climbing comercial'
+        ],
         ['The Ultimate Zackatana',
-        '<iframe class="video" width="100%" height="100%"src="https://www.youtube.com/embed/6w8QNKQ0XFU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+        'assets/Gallery/Animation/Zakatana.mp4',
         'Using Blender Will sculpted and designed a beat saber game asset for his brother. This animation was presented as a christmas present reveal. The saber features trail and lighting effects.',
         'Zackatana trailer'
         ],
         ['Avocado On The Run',
-        '<iframe class="video" width="100%" height="100%"src="https://www.youtube.com/embed/4H05nyf2ph0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+        'assets/Gallery/Animation/AvacadoRun.mp4',
         'As a test animation, Will set out to create anything his family asked of him. This Avacado is what was requested and now he is on the lam.',
         'Avacoda Run Cycle'
         ],
         ['2D Portfolio Reel',
-        '<iframe class="video" width="100%" height="100%"src="https://www.youtube.com/embed/Dp-j1I2MjPs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+        'assets/Gallery/Animation/AnimationReel2018.mp4',
         'This is a reel of 2D animations created by Will.',
         '2D portfolio Reel'
         ]
     ],
     website: [
-        ['Infinite Scroll',
-        'assets/Gallery/websites/InfniteScroll.png',
-        'This Site is further expleained at <a href="http://127.0.0.1:5500/programming.html">thislink</a>. ',
-        'Infinite Scroll'
-        ],
         ['Portfolio Site',
-        'assets/Gallery/websites/PortfolioDesign.jpg',
-        'This Site is further expleained at <a href="http://127.0.0.1:5500/programming.html">thislink</a>. ',
+        'assets/Gallery/websites/PortfolioSite.png',
+        'Beleive it or not, Will designed the website you are on currently. Be sure to check out the programming side of the site, there are cute gifs.',
         'Portfolio Site'
+        ],
+        ['Infinite Scroll',
+        'assets/Gallery/InfiniteScroll/InfiniteScroll.png',
+        'Will built this site in response to a Pramp interview question. Adding the challenge of React.js contributed a valuble learneing experience. To visit the site click the image above.',
+        'Infinite Scroll screen shot',
+        'https://wills-infinite-scroll.netlify.app/'
+        ],
+        ['Comic Complex',
+        'assets/Gallery/Comic Complex/about.png',
+        'The Comic Complex is a conceptual portfolio. A ideal place where artist can live and display their art inspired by a local arts programm AS220. To visit the site follow this <a href="https://comic-complex.netlify.app/#/" target="_blank">link</a> or click the image above. ',
+        'About page of the Comic Complex',
+        'https://comic-complex.netlify.app/#/about'
+        ],
+        ['Motif Word Press',
+        'assets/Gallery/websites/MotifWebsite.png',
+        'Though the job didn\'t entail much, Will spent six months updating and publishing articles on Motif Magazine\'s Wordpress site. Here is a <a href="https://motifri.com/the-tail-of-a-tiny-lobster/" target="_blank">link</a> to one of the pages. Will added images to mirror the articles featured in the printed magazine. Additionally Will works for Motif as a freelance web developer helping to create sites for clients',
+        'Screen Grab of the Motif Magazine website',
+        'https://motifri.com/the-tail-of-a-tiny-lobster/'
+        ],
+        ['Wood Turner\'s Calculator',
+        'assets/Gallery/turners-calculator/WebVase2.png',
+        'Will designed this site for wood workers to calculate segmented rings. The UI is responsive and designed to be mobile first. Follow this <a href="https://wood-turners-calculator.netlify.app/" target="_blank">link</a> to visit this site.',
+        'Screen Grab of Turner\'s Calculator',
+        'https://wood-turners-calculator.netlify.app/'
         ]
     ]
 };
@@ -233,12 +286,14 @@ populatePanels = () => {
             title.className = 'image-title';
             title.innerHTML = thisObject[j][0];
             slide.appendChild(title);
-            if (/(?:<\/iframe>)/.test(thisObject[j][1])){
+            if (/(?:\.mp4)/.test(thisObject[j][1])){
                 // Add video
-                let video = document.createElement('DIV');
+                let video = document.createElement('VIDEO');
                 video.className = 'video';
+                video.controls = true;
+                video.type = 'video/mp4'
                 video.alt = thisObject[j][3];
-                video.innerHTML = thisObject[j][1];
+                video.src = thisObject[j][1];
                 slide.appendChild(video);  
             } else {
                 // Add Images
@@ -246,7 +301,17 @@ populatePanels = () => {
                 image.className = 'img';
                 image.alt = thisObject[j][3];
                 image.src = thisObject[j][1];
-                slide.appendChild(image);
+                if (thisObject[j][4]) {
+                    image.style.cursor = 'pointer';
+                    let link = document.createElement('A');
+                    link.className = 'img-link';
+                    link.href = thisObject[j][4];
+                    link.target = '_blank';
+                    link.appendChild(image);
+                    slide.appendChild(link);
+                } else {
+                    slide.appendChild(image);
+                }
             }
             //Add Dot
             let dot = document.createElement('SPAN');
@@ -258,6 +323,7 @@ populatePanels = () => {
             text.className = 'description';
             text.innerHTML = thisObject[j][2];
             slide.appendChild(text);
+
         }
     }
 }
@@ -290,11 +356,11 @@ showSlides = (n, panel) => {
 
 
 let tiles = document.getElementsByClassName('tile-top');
-let pausedTiles = document.getElementsByClassName('stop-gif');
 
 popUp = (e) => {
     let panel = document.getElementById(e.target.id.slice(0, -7) + "-panel");
     panel.style.display = 'block';
+    slideIndex = 1
     showSlides(1, panel);
 }
 
@@ -305,6 +371,7 @@ closePopUp = (e) => {
 addEvents = () => {
     let array = document.getElementsByClassName('container')
     let xButtons = document.getElementsByClassName('closePanel')
+    let WSLogo = document.querySelector('.header-button')
     for (i = 0; i < array.length; i++) {
         let top = array[i].childNodes[1];
         let bottom = array[i].childNodes[3];
@@ -316,6 +383,47 @@ addEvents = () => {
         bottom.addEventListener('mouseout', swapBack);
         bottom.addEventListener('click', popUp);
     }
+    WSLogo.addEventListener('mouseenter', function() { hoverOver(WSLogo) })
+    WSLogo.addEventListener('mouseleave', function() { hoverOut(WSLogo) })
+}
+
+let frames = 1
+let counter;
+hoverOver = (WSLogo) => {
+    // Stop counting down
+    clearInterval(counter);
+    // Start counting up
+    counter = setInterval(() =>{
+        frames++; 
+        // Animation complete Stop on frame 9
+        if (frames >= 9) {
+            clearInterval(counter);
+            frames = 9;
+            WSLogo.style.backgroundImage = `url('assets/Gallery/Animation/WSLogo/WS9.png')`;
+        }
+        //Set bg url to current frame
+        let url = 'assets/Gallery/Animation/WSLogo/WS' + frames + '.png';
+        WSLogo.style.backgroundImage = `url('${url}')`;
+    }, 50);
+}
+
+hoverOut = (WSLogo) => {
+    // Stop counting up
+    clearInterval(counter)
+    // Start counting down
+    counter = setInterval(() => {
+        frames--; 
+        console.log('out',frames)
+        // Animation complete Stop on frame 1
+        if (frames <= 1) {
+            clearInterval(counter)
+            frames = 1
+            WSLogo.style.backgroundImage = `url('assets/Gallery/Animation/WSLogo/WS1.png')`;
+        };
+        //Set bg url to current frame
+        let url = 'assets/Gallery/Animation/WSLogo/WS' + frames + '.png';
+        WSLogo.style.backgroundImage = `url('${url}')`;
+    }, 50);
 }
 
 swap = (e) => {

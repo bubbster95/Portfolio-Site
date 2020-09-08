@@ -12,7 +12,7 @@ html {
 }
 
 body {
-    background-image: linear-gradient(to bottom, rgb(255, 255, 255), rgba(2, 31, 44, 0));
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(2, 31, 44, 0));
 }
 
 
@@ -54,15 +54,17 @@ p {
     overflow: auto;
 }
 
-h1, .landing-tile:hover, .contact-button, .tile-bottom:hover, .image-title, .closePanel, .description, h4, h3, p, .contact-title {
+.landing-tile:hover, .tile-bottom:hover, .image-title, .closePanel, .description, h4, h3, p, .contact-title {
     color: white;
 }
 
-a, .tile-bottom, .tile-top, h2 {
+a, .tile-bottom, .tile-top, h2, h1, .contact-button {
     color: #08659C;
 }
-
-a:hover, .closePanel:hover {
+a:hover {
+    color: turquoise;
+}
+.closePanel:hover, .contact-button:hover {
     color: black;
 }
 
@@ -74,7 +76,7 @@ a:hover, .closePanel:hover {
     background-image: linear-gradient(to bottom, rgba(8, 101, 156, 9), rgba(65, 152, 202, .8));
 }
 .header {
-    background-image: linear-gradient(to bottom, rgba(8, 101, 156, 9), rgba(65, 152, 202, .5));
+    background-image: linear-gradient(to bottom, white, rgba(255, 255, 255, 0.5));
 }
 
 .panel {
@@ -98,7 +100,7 @@ a:hover, .closePanel:hover {
 
 }
 
-h1 {
+h1, .header-button {
     position: fixed;
     margin: 0;
     font-size: 35px;
@@ -118,6 +120,16 @@ p {
     font-size: 2vh;
     overflow: auto;
     display: inline-block;
+}
+
+.header-button {
+    z-index: 10;
+    background-image: url("assets/Gallery/Animation/WSLogo/WS1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center left;
+    height: 35px;
+    width: 200px;
 }
 
 .contact-button {
@@ -193,7 +205,6 @@ a {
     -ms-user-select: none;
     user-select: none;
 }
-
 
 /* Contact Page */
 .content-grid {
@@ -289,5 +300,22 @@ h3, .contact-text {
 
     .tile-bottom, .tile-top { height: 40vh; width: 40vh; }
 
-    h1 { padding-bottom: 3px; }
+}
+
+@media screen {
+
+    div#preloader {
+        position: absolute;
+        left: -9999px;
+        top: -9999px;
+    }
+    div#preloader img {
+        display: block;
+    }
+}
+@media print {
+    div#preloader, div#preloader img {
+        visibility: hidden;
+        display: none;
+    }
 }
