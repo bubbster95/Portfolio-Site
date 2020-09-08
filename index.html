@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html class="html">
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="./portfolio.css" />
-        <link rel="stylesheet" href="./tile-images.css" />
+        <link rel="stylesheet" href="./tile-images.css"/>
+        <link rel="stylesheet" href="./panel/panel.css"/>
         <script type="text/javascript" src="./index.js"></script>
         <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Russo+One&display=swap" rel="stylesheet">
     </head>
-    <body onload="addEvents()">
+    <body id="program-landing" onload="populatePanels(), addEvents()">
         <div id="preloader">
             <img src="assets/Gallery/Animation/WSLogo/WS1.png" width="1" height="1">
             <img src="assets/Gallery/Animation/WSLogo/WS2.png" width="1" height="1">
@@ -21,18 +22,89 @@
         </div>
         <div class="header">
             <a class="header-button" href="index.html"></a>
-            <!-- <a class="header-gif" src="index.html"></a> -->
-            <a class="contact-button" href="contact.html">Contact</a>
+            <a class="contact-button" href="index.html">Contact</a>
         </div>
-        <div class="content" id="landing-content">
-            <div class="container" id="landing">
-                <div class="tile-top" id="programming"></div>
-                <button class="tile-bottom" id="programming-button" onclick="window.location.href='programming.html'">Programming</button>
+        <div class="content">
+        <h2 id="projects">Programming Projects</h2>
+            <!-- Disco Dude -->
+            <div class="container">
+                <div class="tile-top" id="disco-dude"></div>
+                <button class="tile-bottom" id="disco-dude-button">Disco Dude</button>              
             </div>
-            <div class="container" id="landing">
-                <div class="tile-top" id="design"></div>
-                <button class="tile-bottom" id="design-button" onclick="window.location.href='design.html'">Design</button>
+            <div class="panel" id="disco-dude-panel"></div>
+            <!-- Wood Turners Calculator-->
+            <div class="container">
+                <div class="tile-top" id="turner" ></div>
+                <button class="tile-bottom" id="turner-button">Turners Calculator</button>  
             </div>
+            <div class="panel" id="turner-panel"></div>
+            <!-- Infinite Scroll-->
+            <div class="container">
+                <div class="tile-top" id="scroll"></div>
+                <button class="tile-bottom" id="scroll-button">Infinte Scroll React</button>
+            </div>
+            <div class="panel" id="scroll-panel"></div>
+            <!-- Portfolio Site -->
+            <div class="container">
+                <div class="tile-top" id="portfolio" ></div>
+                <button class="tile-bottom" id="portfolio-button">Portfolio Site</button>  
+            </div>
+            <div class="panel" id="portfolio-panel"></div>
+        
+            <h2 id="projects">Design Projects</h2>
+                <!-- Motif -->
+                <div class="container">
+                    <div class="tile-top" id="motif"></div>
+                    <button class="tile-bottom" id="motif-button">Motif Magazine</button>
+                </div>
+                <div class="panel" id="motif-panel">
+                </div>
+                <!-- Khoo -->
+                <div class="container">
+                    <div class="tile-top" id="khoo"></div>
+                    <button class="tile-bottom" id="khoo-button">Khoo Design</button>
+                </div>
+                <div class="panel" id="khoo-panel"></div>
+                <!-- UI -->
+                <div class="container">
+                    <div class="tile-top" id="ui"></div>
+                    <button class="tile-bottom" id="ui-button">UI</button>
+                </div>
+                <div class="panel" id="ui-panel"></div>
+                <!-- Comics -->
+                <div class="container">
+                    <div class="tile-top" id="comics"></div>
+                    <button class="tile-bottom" id="comics-button">Comics</button>
+                </div>
+                <div class="panel" id="comics-panel"></div>
+                <!-- Animation -->
+                <div class="container">
+                    <div class="tile-top" id="animation"></div>
+                    <button class="tile-bottom" id="animation-button">3D & 2D Animation</button>
+                </div>
+                <div class="panel" id="animation-panel"></div>
+                <!-- website -->
+                <div class="container">
+                    <div class="tile-top" id="website"></div>
+                    <button class="tile-bottom" id="website-button">Websites</button>
+                </div>
+                <div class="panel" id="website-panel"></div>
         </div>
+        <div class="content-grid">
+            <div class="profile"></div>
+            <h2 class="contact-title">About Will Stiles</h2>
+            <div class="profile-body">
+                <p class="contact-text">
+                    A self driven programmer with professional design expertise.  
+                    Experienced in HTML5, CSS, JS using VS Code. 
+                    Well versed in the Adobe Creative Suite specializing in Photoshop, Illustrator, Indesign, Animate CC, and more. 
+                    Looking for somebody to design your project and build it too? Will is the employee for you.
+                </p>   
+            </div>
+            <div class="contact-info">
+                <h3>STILES.BILLY@gmail.com</h3><br>
+                <p class="contact-text"><b>Please include:</b><br>Contact information, and describe the project / job.</p>
+            </div>
+        </div>  
     </body>
 </html>

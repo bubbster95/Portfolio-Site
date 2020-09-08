@@ -27,7 +27,7 @@ html, body, p, .panel, .content {
 .header {
     position: fixed;
     z-index: 10;
-    height: 40px;
+    height: 45px;
 }
 
 .landing-tile:hover, .contact-button, .tile-bottom:hover {
@@ -73,7 +73,7 @@ a:hover {
 }
 
 .content-grid {
-    background-image: linear-gradient(to bottom, rgba(8, 101, 156, 9), rgba(65, 152, 202, .8));
+    background-image: linear-gradient(to right, rgba(8, 101, 156, 9), rgba(65, 152, 202, .0));
 }
 .header {
     background-image: linear-gradient(to bottom, white, rgba(255, 255, 255, 0.5));
@@ -102,14 +102,16 @@ a:hover {
 
 h1, .header-button {
     position: fixed;
-    margin: 0;
-    font-size: 35px;
+    margin: 5px;
     padding-left: 15px;
+}
+#projects {
+    text-shadow: 1px 1px rgb(255, 255, 255);
 }
 
 h2 {
     padding-top: 4vw;
-    font-size: 5vw;
+    font-size: 5vh;
 }
 
 h3 {
@@ -145,21 +147,14 @@ a {
 
 .content {
     display: flex;
+    position: relative;
+    top: 74vh;
     flex-wrap: wrap;
     justify-content: center;
 }
 
 
 /* Tile CSS Start */
-
-#landing-content {
-    margin-top: 15%;
-}
-#landing {
-    justify-content: center;
-    margin: 0% 5% 0% 5%;
-}
-
 .container {
     margin-left: 2%;
     margin-right: 2%;
@@ -176,9 +171,9 @@ a {
     transition: .5s;
     font-size: 1.5em;
     border-radius: 5px;
-    height: 30vh;
-    width: 30vh;
-    margin: 20px;
+    height: 40vh;
+    width: 40vh;
+    margin: 15px;
 }
 /* Tile CSS End */
 
@@ -296,9 +291,9 @@ h3, .contact-text {
         justify-self: center;
     }
 
-    .content { margin-top: 10px; }
+    .content { margin-top: 10px; top: 120vh; }
 
-    .tile-bottom, .tile-top { height: 40vh; width: 40vh; }
+    .tile-bottom, .tile-top { height: 30vh; width: 30vh; }
 
 }
 

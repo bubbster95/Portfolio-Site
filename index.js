@@ -307,9 +307,11 @@ populatePanels = () => {
                     link.className = 'img-link';
                     link.href = thisObject[j][4];
                     link.target = '_blank';
+                    link.style.gridArea = "image"
                     link.appendChild(image);
                     slide.appendChild(link);
                 } else {
+                    image.style.gridArea = "image"
                     slide.appendChild(image);
                 }
             }
