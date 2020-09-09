@@ -387,6 +387,26 @@ addEvents = () => {
     }
     WSLogo.addEventListener('mouseenter', function() { hoverOver(WSLogo) })
     WSLogo.addEventListener('mouseleave', function() { hoverOut(WSLogo) })
+    window.addEventListener('scroll', scrollEvent);
+}
+
+scrollEvent = () => {
+    let moon = document.querySelector('.moon');
+    let moonLight = document.querySelector('.moon-light');
+    let trees = document.querySelector('.trees');
+    let value = window.scrollY;
+    let grow = ((value *.01) + 60 +'%');
+    let body = document.getElementsByTagName('BODY')[0];
+
+    body.style.backgroundSize = ((-value*.005) + 120 +'%'), ((-value *.005) + 120 +'%');
+
+    moon.style.transform = 'rotate(' + value*.008 + 'deg)';
+    moon.style.backgroundSize = grow, grow;
+    moon.style.left = ((value* 0.015) +'%');
+    moon.style.bottom = ((value* 0.02) - 10 +'%');
+    moonLight.style.top = ((-value* 0.008) + 20 +'%');
+    trees.style.bottom = ((value* 0.008)- 70 +'%');
+
 }
 
 let frames = 1
