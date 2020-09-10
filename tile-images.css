@@ -34,9 +34,9 @@
 }
 
 #ui {
-    background-image: url("assets/Gallery/UI/FFHomePage.jpg");
-    background-position: center 5%;
-    background-size: 110%;
+    background-image: url("assets/Gallery/UI/FFTile.jpg");
+    background-position: center;
+    background-size: 100%;
 }
 
 #comics {

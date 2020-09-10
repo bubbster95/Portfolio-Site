@@ -11,75 +11,6 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-color: black;
-}
-
-section{
-    z-index: -1;
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-section:before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 100px;
-    background: black;
-    z-index: 1;
-}
-
-section img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    pointer-events: none;
-}
-.moon-light {
-    position: fixed;
-    display: block;
-    left: 0;
-    bottom: -20%;
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    background: -webkit-linear-gradient(to bottom, transparent 40%,#fff 200%);
-    background: -moz-linear-gradient(to bottom, transparent 40%,#fff 200%);
-    background: linear-gradient(to bottom, transparent 40%,#fff 200%);
-}
-
-.moon {
-    position: fixed;
-    z-index: -1;
-    bottom: -10%;
-    width: 40vh;
-    height: 40vh;
-    background-image: url('assets/Gallery/Background/Moon.png');
-    background-size: 60% 60%;
-    background-repeat: no-repeat;
-}
-
-.trees {
-    position: fixed;
-    z-index: -1;
-    bottom: -70%;
-    width: 101vw;
-    height: 100vh;
-    border-style: none;
-    background-image: url('assets/Gallery/Background/TreeLine.png');
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-}
-
-body {
     z-index: -2;
 }
 
@@ -325,16 +256,59 @@ h3, .contact-text {
     grid-area: image;
     height: 40vh;
     width: 40vh;
-    background-image: url('assets/Gallery/Profile.jpg');
+    background-image: url('assets/Gallery/PortfolioSite/Profile.jpg');
     background-size: cover;
     background-position: center;
 }
 /* Contact Page End */
 
+/* BG elements */
+.moon-light {
+    position: fixed;
+    display: block;
+    left: 0;
+    bottom: -20%;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: -webkit-linear-gradient(to bottom, transparent 40%,#fff 200%);
+    background: -moz-linear-gradient(to bottom, transparent 40%,#fff 200%);
+    background: linear-gradient(to bottom, transparent 40%,#fff 200%);
+}
+
+.moon {
+    position: fixed;
+    z-index: -1;
+    bottom: -20%;
+    width: 40vh;
+    height: 40vh;
+    background-image: url('assets/Gallery/Background/Moon.png');
+    background-size: 60% 60%;
+    background-repeat: no-repeat;
+}
+
+.trees {
+    position: fixed;
+    z-index: -1;
+    bottom: -70%;
+    width: 101vw;
+    height: 100vh;
+    border-style: none;
+    background-image: url('assets/Gallery/Background/TreeLine.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+/* BG Elements End */
+
 @media only screen and (min-width: 800px) {
     .content {
         width: 70%;
         margin: auto;
+    }
+}
+@media only screen and (min-width: 1100px) {
+    body {
+        background-image: url('assets/Gallery/Background/MilkyWaySideways.jpg');
     }
 }
 

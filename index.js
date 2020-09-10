@@ -72,10 +72,40 @@ const objArr = {
         ]
     ],
     portfolio: [
-        ['Portfolio Image',
-        'assets/Gallery/websites/PortfolioDesign.jpg',
-        'This is a Screen Shot of the old version of the portfolio shite you are on',
+        ['Portfolio Page from the top',
+        'assets/Gallery/PortfolioSite/WillStilesSquare.png',
+        'This single page site is a work in progress. Though it may be complete the site will always have new pieces and features added. This site is an example of Will\'s programming ability complete with animated flurishes and a paralaxing background.',
         'Portfolio Site Screen Shot'
+        ],
+        ['Mobile First Portfolo',
+        'assets/Gallery/PortfolioSite/MobileFirst.png',
+        'Like all of Will\'s projects, this site takes the mobile first approach. In addition to being fully responsive.',
+        'Mobile portfolio site'
+        ],
+        ['Responsive Panel Design',
+        'assets/Gallery/PortfolioSite/PanelWeb.png',
+        'Each responsive panel is dynamically created using an object populated with titles, image urls, descriptions, alt text, and conditinally added href links.',
+        'Responsive panel'
+        ],
+        ['Mobile Panel Design',
+        'assets/Gallery/PortfolioSite/MobilePanel.png',
+        'Even in mobile these panels resize their image to fit either a max height/width to allow for the largest display possible.',
+        'Mobile panel'
+        ],
+        ['Custom Gifs',
+        'assets/Thumbnails/DiscoGif.gif',
+        'For the programming tiles Will created custom gifs the convey the core concept of each idea in one glance.',
+        'Disco Dude sillohette gif'
+        ],
+        ['Logo Gif',
+        'assets/Gallery/Animation/WSLogo/WS9.png',
+        'The logo posed an interesting problem. Replacing a static logo with a gif on hover seemed like the best choice initially. However the goal was to have full control over the frames in this gif. With a small JS function Will created a gif that goes forward and reverse depending on hover state. Moreover if the user hovers off before the end of the animation it begins reversing from the frame it landed on!',
+        'WS logo gif'
+        ],
+        ['Paralaxing Background',
+        'assets/Gallery/Background/Moon.png',
+        'Will is always reaching for the stars in hopes of landing on the moon. So a paralxing background of space comes as a no brainer.',
+        'Moon'
         ]
     ],
     motif: [
@@ -123,11 +153,6 @@ const objArr = {
         ]
     ],
     khoo: [
-        ['Khoo Drinks Menu',
-        'assets/Gallery/Khoo/Drinks.jpg',
-        'This is one page of ten pages designed for Khoo Restaurant in order to overhaul their menu and design.',
-        'Khoo Drinks Menu'
-        ],
         ['Sunday Khoo Deal',
         'assets/Gallery/Khoo/SundayKhoo.jpg',
         'This table tent was designed to bring more customers in for sundays.',
@@ -137,26 +162,56 @@ const objArr = {
         'assets/Gallery/Khoo/ThirstyThursday.jpg',
         'Collaborating with the bartenders made for much prittier table tents.',
         'Thirsty Thursday table tent'
+        ],
+        ['Khoo Menu PG 2',
+        'assets/Gallery/Khoo/DinningMenuGray2.jpg',
+        'Khoo had a major haul of their entire dining menu. Will overcame many challenges during this project. The main obsticle with this project was the sheer amount of copy.',
+        'Khoo Menu pg 2'
+        ],
+        ['Khoo Menu PG 5',
+        'assets/Gallery/Khoo/DinningMenuGray5.jpg',
+        'The major obsticle with this page was organizing lunch menus in a clear and concise way.',
+        'Khoo Menu pg 5'
+        ],
+        ['Khoo Menu PG 7',
+        'assets/Gallery/Khoo/DinningMenuGray7.jpg',
+        'This page proposed a strange issue. arranging every type of sushi available on one page while still leaving room for photos.',
+        'Khoo Sushi menu'
+        ],
+        ['Khoo Special Drinks Menu',
+        'assets/Gallery/Khoo/DrinksGray1.jpg',
+        'The specialty drinks page was the first page created by Will for Khoo. The main hurtle for this page was sillohetting each drink indevidually.',
+        'Khoo Special drinks menu'
+        ],
+        ['Khoo Drinks Menu',
+        'assets/Gallery/Khoo/DrinksGray2.jpg',
+        'The second drinks page was more straight forward. This page serves the express purpose of idisplaying all the available brands in Khoo\'s full bar.',
+        'Khoo drinks menu'
         ]
     ],
     ui: [
-        ['Friend Finder Home Page',
-        'assets/Gallery/UI/FFHomePage.jpg',
-        'Looking to Design a Complete UI, Will created Friend Finder.',
-        'Friend Finder Home Page'
+        ['Friend Finder Login',
+        'assets/Gallery/UI/2.jpg',
+        'Looking to Design a Complete UI, Will created Friend Finder. This Project started as illustrations on flashcards.',
+        'Friend Finder login'
         ],
-        ['Friend Finder Feed',
-        'assets/Gallery/UI/FFFeed.jpg',
+        ['Find Friends',
+        'assets/Gallery/UI/3.jpg',
+        'Flip through a virtual roledex of friends until you find people with similar intrests. Unlike other swiping apps this Friend Finder is for fun and not looking for... well something else.',
+        'Find Friends page'
+        ],
+        ['Find Activities',
+        'assets/Gallery/UI/4.jpg',
         'This page is a feed of activities to attend. Friends can post events with little to no notice in hopes of meeting people who are free in the area.',
         'Friend Finder Feed'
         ],
-        ['Friend Finder Friends Page',
-        'assets/Gallery/UI/FFFriendsPage.jpg',
+        ['Your Friends',
+        'assets/Gallery/UI/5.jpg',
         'Friend finder obviously needs a page to keep track of all the friends you have found using the app.',
-        'Friend Finder Frinds Page'
+        'Friend Finder Friends Page'
         ],
         ['Friend Finder Flow Chart',
-        'assets/Gallery/UI/FlowChartSmall.jpg',
+        'assets/Gallery/UI/Flow Chart.jpg',
         'Friend finder started on flash cards then moved to a basic flow chart before becoming this final document',
         'Friend Finder flow chart'
         ],
@@ -394,16 +449,20 @@ scrollEvent = () => {
     let moon = document.querySelector('.moon');
     let moonLight = document.querySelector('.moon-light');
     let trees = document.querySelector('.trees');
-    let value = window.scrollY;
-    let grow = ((value *.01) + 60 +'%');
     let body = document.getElementsByTagName('BODY')[0];
 
-    body.style.backgroundSize = ((-value*.005) + 120 +'%'), ((-value *.005) + 120 +'%');
+    let value = window.scrollY;
+    let windowWidth = window.innerWidth;
+    let totalHeight = document.body.clientHeight;
 
+    let grow = ((value *.01) + 60 +'%');
+
+    body.style.backgroundSize = ((-value*.005) + 120 +'%'), ((-value *.005) + 120 +'%');
     moon.style.transform = 'rotate(' + value*.008 + 'deg)';
     moon.style.backgroundSize = grow, grow;
-    moon.style.left = ((value* 0.015) +'%');
-    moon.style.bottom = ((value* 0.02) - 10 +'%');
+
+    moon.style.left = ((value / totalHeight) * 85)  + '%';
+    moon.style.bottom = ((value/ totalHeight * 85) - 20 +'%');
     moonLight.style.top = ((-value* 0.008) + 20 +'%');
     trees.style.bottom = ((value* 0.008)- 70 +'%');
 
@@ -435,7 +494,6 @@ hoverOut = (WSLogo) => {
     // Start counting down
     counter = setInterval(() => {
         frames--; 
-        console.log('out',frames)
         // Animation complete Stop on frame 1
         if (frames <= 1) {
             clearInterval(counter)
