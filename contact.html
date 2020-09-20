@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html class="html">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./portfolio.css" />
+        <script type="text/javascript" src="./index.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Russo+One&display=swap" rel="stylesheet">
+    </head>
+    <body onload="addEvents()">
+        <div id="preloader">
+            <img src="assets/Gallery/Background/MilkyWay.jpg" width="1" height="1">
+            <img src="assets/Gallery/Background/MilkyWaySideways.jpg" width="1" height="1">
+            <img src="assets/Gallery/Background/Moon.png" width="1" height="1">
+            <img src="assets/Gallery/Background/TreeLine.png" width="1" height="1">
+        </div>
+        <div class="header">
+            <a class="header-button" href="index.html"></a>
+        </div>
+        <div class="content">
+
+            <form action="mail.php" method="POST">
+                <p>Name</p> <input type="text" name="name">
+                <p>Email</p> <input type="text" name="email">
+                <p>Message</p><textarea name="message" rows="6" cols="25"></textarea><br />
+                <input type="submit" value="Send"><input type="reset" value="Clear">
+            </form>
+        </div>
+        <div class="moon-light"></div>
+        <div class="moon"></div>
+        <div class="trees"></div>
+    </body>
+</html>
