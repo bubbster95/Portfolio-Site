@@ -29,15 +29,15 @@ html, p, .panel, .content {
     height: 45px;
 }
 
-.landing-tile:hover, .contact-button, .tile-bottom:hover {
+.landing-tile:hover, .contact-button, .send, .clear, .tile-bottom:hover {
     outline: none;
 }
 
-h1, h4, p, .contact-text, .contact-title {
+h4, p, .contact-text, .contact-title {
     text-align: left;
 }
 
-h1, h3, h2, .contact-button, .tile-bottom, .closePanel {
+h1, h3, h2, .contact-button, .tile-bottom, .closePanel, .send, .clear {
     font-family: 'Russo One', sans-serif;
 }
 
@@ -53,17 +53,17 @@ p {
     overflow: auto;
 }
 
-.landing-tile:hover, .tile-bottom:hover, .image-title, .closePanel, .description, h4, h3, p, .contact-title {
+h1, .landing-tile:hover, .tile-bottom:hover, .image-title, .send, .clear, .closePanel, .description, h4, h3, p, .contact-title {
     color: white;
 }
 
-a, .tile-bottom, .tile-top, h2, h1, .contact-button {
+a, .tile-bottom, .tile-top, h2, .contact-button {
     color: #08659C;
 }
 a:hover {
     color: turquoise;
 }
-.closePanel:hover, .contact-button:hover {
+.closePanel:hover, .contact-button:hover, .send:hover, .clear:hover {
     color: black;
 }
 
@@ -71,7 +71,7 @@ a:hover {
     border-color: rgba(0, 0, 0, 0);
 }
 
-.content-grid {
+.content-grid, .form-grid {
     background-image: linear-gradient(to right, rgba(8, 101, 156, 9), rgba(65, 152, 202, .0));
 }
 .header {
@@ -82,7 +82,7 @@ a:hover {
     background-image: linear-gradient(to bottom, rgba(8, 101, 156, 9), rgba(65, 152, 202, .1));
 }
 
-.landing-tile:hover, .tile-bottom, .tile-top, .closePanel:hover {
+.landing-tile:hover, .tile-bottom, .tile-top, .closePanel:hover, .send, .clear {
     background-color: white;
 }
 
@@ -90,7 +90,7 @@ a:hover {
     background-color: black;
 }
 
-.closePanel {
+.closePanel, .send, .clear {
     background-color: rgba(0,0,0,0);
 }
 
@@ -99,7 +99,7 @@ a:hover {
 
 }
 
-h1, .header-button {
+.header-button {
     position: fixed;
     margin: 5px;
     padding-left: 15px;
@@ -200,7 +200,7 @@ a {
     user-select: none;
 }
 
-/* Contact Page */
+/* About Will */
 .content-grid {
     position: absolute;
     align-self: center;
@@ -256,7 +256,56 @@ h3 {
     background-size: cover;
     background-position: center;
 }
-/* Contact Page End */
+/* About Will End */
+
+/* Contact */
+.name { grid-area: name;}
+.name-input { grid-area: name-input;}
+.email { grid-area: email;}
+.email-input { grid-area: email-input;}
+.message { grid-area: message;}
+.message-input { grid-area: message-input;}
+.send { grid-area: send;}
+.clear { grid-area: clear;}
+
+.form-grid {
+    position: absolute;
+    top: 90px;
+    left: 5%;
+    width: 90%;
+    display: grid;
+    grid-gap: 2vh;
+    grid-template-rows: 80px 80px 100px 20px;
+    grid-template-areas:
+    'name name-input' 
+    'email email-input'
+    'message message-input'
+    'send clear';
+}
+
+.name, .email, .message {
+    text-align: center;
+}
+
+.name-input, .email-input, .message-input {
+    align-self: center;
+}
+.send, .clear {
+    justify-self: center;
+    width: 100px;
+    height: 30px;
+    border: solid;
+    border-radius: 5px;
+    border-width: 1px;
+    transition: 0.6s ease;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.send:hover, .clear:hover {
+    background-color: rgba(255, 255, 255, .5);
+}
+/* Contact End */
 
 /* BG elements */
 .moon-light {
@@ -310,8 +359,6 @@ h3 {
 
 @media only screen and (max-width: 600px) { 
     .content-grid {
-        grid-gap: 10px;
-        display: grid;
         grid-template-rows: 8vh 40vh 40vh 10vh;
         grid-template-columns: 90vw;
         grid-template-areas:
@@ -322,6 +369,16 @@ h3 {
         align-items: center;
         justify-items: center;
     }
+    .form-grid {
+        grid-template-rows: 50px 20px 50px 20px 50px 100px 20px 20px;
+        grid-template-areas:
+        'name' 'name-input' 
+        'email' 'email-input'
+        'message' 'message-input'
+        'send' 'clear';
+        justify-content: center;
+    }
+
     .contact-title, .contact-text, .contact-info, h4, p {
         text-align: center;
     }
