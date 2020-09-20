@@ -5,7 +5,7 @@ $formcontent="From: $name \n Message: $message";
 $recipient = "stiles.billy@gmail.com";
 $subject = "Contact Form";
 $mailheader = "From: $email \r\n";
-header('Location:'.$_SERVER['index.html']);
+header("Location: index.html");
 mail($recipient, $subject, $formcontent, $mailheader) or die("Error!");
 echo "Thank You!";
 ?>
