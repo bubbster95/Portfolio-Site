@@ -1,3 +1,4 @@
+// Panel Content as such: Title, Url, Description, Alt, Destination link.
 const objArr = {
     disco: [
         ['Disco Dude', 
@@ -298,6 +299,7 @@ const objArr = {
         ]
     ]
 };
+/* End Panel Content */
 
 /* Add content and event listeners to Panels */
 populatePanels = () => {
@@ -452,20 +454,19 @@ scrollEvent = () => {
     let body = document.getElementsByTagName('BODY')[0];
 
     let value = window.scrollY;
-    let windowWidth = window.innerWidth;
     let totalHeight = document.body.clientHeight;
 
     let grow = ((value *.01) + 60 +'%');
 
     body.style.backgroundSize = ((-value*.005) + 120 +'%'), ((-value *.005) + 120 +'%');
+    
     moon.style.transform = 'rotate(' + value*.008 + 'deg)';
     moon.style.backgroundSize = grow, grow;
-
     moon.style.left = ((value / totalHeight) * 85)  + '%';
     moon.style.bottom = ((value/ totalHeight * 85) - 20 +'%');
     moonLight.style.top = ((-value* 0.008) + 20 +'%');
-    trees.style.bottom = ((value* 0.008)- 70 +'%');
 
+    trees.style.bottom = ((value* 0.008)- 70 +'%');
 }
 
 let frames = 1
