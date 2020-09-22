@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 html, body { 
     position: absolute;
     margin: 0px;
@@ -12,10 +15,11 @@ body {
     background-attachment: fixed;
     background-color: black;
     z-index: -2;
+    overflow-x: hidden;
 }
 
 
-html, body, .contact-info, .content-grid, .header, .content, .panel, #projects {
+html, body, .contact-info, .header, .content, .panel, #projects {
     width: 100%;
 }
 
@@ -135,7 +139,7 @@ p {
 
 .contact-button {
     position: absolute;
-    right: 10px;
+    right: 20px;
     margin-top: 10px;
     font-size: 20px;
 }
@@ -204,12 +208,13 @@ a {
 .content-grid {
     position: absolute;
     align-self: center;
+    width: 80%;
     top: 90px;
-    left: 5%;
+    padding: 2%;
     display: grid;
     grid-gap: 2vh;
     grid-template-rows: 8vh 40vh 5vh;
-    grid-template-columns: 40vh 40vh;
+    grid-template-columns: 40vh 50vh;
     grid-template-areas:
     'title title' 
     'image body'
@@ -271,7 +276,6 @@ h3 {
 .form-grid {
     position: absolute;
     top: 90px;
-    left: 5%;
     width: 90%;
     display: grid;
     grid-gap: 2vh;
@@ -284,14 +288,18 @@ h3 {
 }
 
 .name, .email, .message {
-    text-align: center;
+    text-align: right;
 }
 
-.name-input, .email-input, .message-input {
+.name-input, .email-input, .message-input, .clear {
     align-self: center;
+    justify-self: flex-start;
+}
+.send {
+    align-self: center;
+    justify-self: flex-end;
 }
 .send, .clear {
-    justify-self: center;
     width: 100px;
     height: 30px;
     border: solid;
@@ -357,28 +365,32 @@ h3 {
     }
 }
 
-@media only screen and (max-width: 600px) { 
+@media only screen and (max-width: 700px) { 
     .content-grid {
+        padding: 2%;
+        padding-left: 5vw;
         grid-template-rows: 8vh 40vh 40vh 10vh;
         grid-template-columns: 90vw;
         grid-template-areas:
-        'title' 
-        'image'
-        'body'
-        'info';
+        'title''image''body''info';
         align-items: center;
         justify-items: center;
     }
     .form-grid {
         grid-template-rows: 50px 20px 50px 20px 50px 100px 20px 20px;
         grid-template-areas:
-        'name' 'name-input' 
-        'email' 'email-input'
-        'message' 'message-input'
-        'send' 'clear';
+        'name''name-input' 
+        'email''email-input'
+        'message''message-input'
+        'send''clear';
         justify-content: center;
     }
-
+    .name, .email, .message {
+        text-align: center;
+    }
+    .clear, .send, .name-input, .email-input, .message-input{
+        justify-self: center;
+    }
     .contact-title, .contact-text, .contact-info, h4, p {
         text-align: center;
     }

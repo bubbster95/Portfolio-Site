@@ -3,51 +3,51 @@ const objArr = {
     disco: [
         ['Disco Dude', 
         'assets/Thumbnails/disco-dude.gif',
-        'As a first project Will created the HTML5 video game Disco Dude. This character Strikes a pose everytime you eliminate a target. Click this link to see the git hub repo for this project <a href="https://github.com/bubbster95/DiscoDude" target="_blank">link</a>.',
+        'This project showcases HTML5, Vanilla JS and CSS. The main goal was to have a character strike a pose every time you tap the screen. To see the github repo for this project click this <a href="https://github.com/bubbster95/DiscoDude" target="_blank">link</a>.',
         'Gif of dude dancing',
         'https://disco-dude.netlify.app'
         ],
         ['Disco Targets',
         'assets/Gallery/DiscoDude/Target.gif',
-        'These targets fly towards the disco dude. Yellow is most common and takes a life after reaching the middle. Red takes a life if you hit it. Green adds ten points to the score but speeds up the game. Blue knocks down the speed.',
+        'To give players a reason to tap the screen, I introduced targets. Yellow is the most common and takes a life after reaching the character, red takes a life if you hit it, blue slows the game down, and green adds ten points to the score, but speeds the game up.',
         'Gif of four targets',
         'https://disco-dude.netlify.app'
         ],
-        ['Disco Dance Floor',
+        ['Disco Stage Set',
         'assets/Gallery/DiscoDude/DiscoFloor.gif',
-        'Disco Dude can\'t simply dance in an empty room. He needs a packed house to cheer him on.',
+        'The set was easy because the character was already designed and only needed a dance club. If I were to redesign this stage now, I\'d create it in such a way that allows it to tile seamlessly for larger screen widths.',
         'Gif of a disco floor',
         'https://disco-dude.netlify.app'
         ],
-        ['Disco Stage Set',
+        ['Completed Game',
         'assets/Gallery/DiscoDude/DiscoDudeOnStage.png',
-        'If you are interested in checking this game out for yourself, click this image above or this <a href="https://disco-dude.netlify.app" target="_blank">link</a>.',
+        'Future versions of the game will include other characters, costumes, and stages. My goal is to fine tune the game and make it more enticing and replayable. If you are interested in playing Disco Dude, click the image above or this <a href="https://disco-dude.netlify.app" target="_blank">link</a>.',
         'Screen shot of Disco Dude',
         'https://disco-dude.netlify.app'
         ]
     ],
     turner: [
-        ['Turner\'s Calculator Web Browser',
+        ['Turner\'s Calculator',
         'assets/Gallery/turners-calculator/WebVase.png',
-        'This is the turner\'s calculator. An HTML5 program built to calculate segmented rings for wood workers. Follow this <a href="https://wood-turners-calculator.netlify.app/" target="_blank">link</a> to check it out. If you are interested in viewing the code, this <a href="https://github.com/bubbster95/segmented-ring-calculator" target="_blank">link</a> takes you too the github repo',
+        'After accidentally destroying a wooden bowl due to miscalculation in my workshop, I created this program. I built Turner\'s Calculator using HTML5 and JS to design segmented rings for woodworkers. Click the image above to see the app, and if you are interested in viewing the code, this <a href="https://wood-turners-calculator.netlify.app/" target="_blank">link</a> takes you to the github repo.',
         'Screen shot of Turner\'s Calculator web browser layout',
         'https://wood-turners-calculator.netlify.app/'
         ],
-        ['Turner\'s Calculator Mobile Browser',
+        ['Turner\'s Calculator Mobile',
         'assets/Gallery/turners-calculator/VaseMobile.png',
-        'The turner\'s calculator was built to work on all devices making it easy to use in the wood shop.',
+        'The goal was to have a simple ring calculator that works on my phone so I could use it in the shop. Turner\'s calculator was built mobile first allowing for a completely user friendly experience.',
         'Screen shot of Turner\'s Calculator mobile browser layout',
         'https://wood-turners-calculator.netlify.app/'
         ],
         ['Blueprint Table',
         'assets/Gallery/turners-calculator/WebBluePrints.png',
-        'After submitting your completed design, the Turner\'s calculator will provide a detailed list of all dimensions needed for every ring created. Using these dimensions to cut your lumber creates the trapezoides needed to build your segmented rings.',
+        'After submitting the completed design, Turner\'s Calculator provides a detailed list of all dimensions needed for every trapezoides necessary to build the segmented rings.',
         'Screen shot of blueprints',
         'https://wood-turners-calculator.netlify.app/'
         ],
         ['Print Preview',
         'assets/Gallery/turners-calculator/PrintPreview.png',
-        'The last step is to print your blueprints. Blueprints include the table of measurments as well as Trapizoids that can be used to trace your design.',
+        'The last step is to print the blueprints which include the table of measurements as well as trapezoids that can be cut out and used to trace the design.',
         'Screen shot of Trapezoides print preview',
         'https://wood-turners-calculator.netlify.app/'
         ]
@@ -55,100 +55,100 @@ const objArr = {
     scroll: [
         ['Infinite Scroll',
         'assets/Gallery/InfiniteScroll/InfiniteScroll.png',
-        'This project is an introduction to React using the "Infinite Scroll" prompt provided by Pramp. To visit the site click this <a href="https://wills-infinite-scroll.netlify.app/" target="_blank">link</a>. To read the code visit this <a href="https://github.com/bubbster95/Infinte-Scroll" target="_blank">link</a>.',
+        'This project was my introduction to React using the "Infinite Scroll" prompt provided by Pramp. The goal is to have new avatars appended when scroll height reaches the bottom of the screen. To visit the site click this <a href="https://wills-infinite-scroll.netlify.app/" target="_blank">link</a>, and to read the code visit this <a href="https://github.com/bubbster95/Infinte-Scroll" target="_blank">link</a>.',
         'Screen Shot of Infinite Scroll landng page',
         'https://wills-infinite-scroll.netlify.app/'
         ],
         ['Infinite Profiles',
         'assets/Gallery/InfiniteScroll/Profile 1.png',
-        'There is an infinite number of profiles. Scrolling to the bottom of the page appends more.',
+        'I used the Adorable Avatars API to easily generate infinite profiles. The avatars are always in the same order rather than being  random.',
         'Screen Shot of Infinite Scroll avatar 1',
         'https://wills-infinite-scroll.netlify.app/'
         ],
         ['Infinite Names and Interests',
         'assets/Gallery/InfiniteScroll/Profile2.png',
-        'Each Profile comes with a name and three things this profile likes most. Both the name and likes are genereated with the help of two objects.',
+        'Inspired by the Adorable Avatar API, I created an object oriented “Name” generator. The names added personality and inspired me to create an object oriented “Likes” generator. ',
         'Screen Shot of Infinite Scroll avatar 2',
         'https://wills-infinite-scroll.netlify.app/'
         ]
     ],
     portfolio: [
-        ['Portfolio Page from the top',
+        ['Portfolio Page From The Top',
         'assets/Gallery/PortfolioSite/WillStilesSquare.png',
-        'This single page site is a work in progress. Though it may be complete the site will always have new pieces and features added. This site is an example of Will\'s programming ability complete with animated flurishes and a paralaxing background.',
+        'This single page site is a work in progress, it serves as an example of my current ability as I refactor the site from time to time.',
         'Portfolio Site Screen Shot'
         ],
         ['Mobile First Portfolo',
         'assets/Gallery/PortfolioSite/MobileFirst.png',
-        'Like all of Will\'s projects, this site takes the mobile first approach. In addition to being fully responsive.',
+        'This site takes the mobile first approach and is fully responsive.',
         'Mobile portfolio site'
         ],
         ['Responsive Panel Design',
         'assets/Gallery/PortfolioSite/PanelWeb.png',
-        'Each responsive panel is dynamically created using an object populated with titles, image urls, descriptions, alt text, and conditinally added href links.',
+        'Each responsive panel is dynamically created using an object populated with titles, image urls, descriptions, alt text, and conditionally added href links.',
         'Responsive panel'
         ],
         ['Mobile Panel Design',
         'assets/Gallery/PortfolioSite/MobilePanel.png',
-        'Even in mobile these panels resize their image to fit either a max height/width to allow for the largest display possible.',
+        'Even in mobile, the panels resize their image to fit a max height or width to allow for the largest display possible.',
         'Mobile panel'
         ],
         ['Custom Gifs',
         'assets/Thumbnails/DiscoGif.gif',
-        'For the programming tiles Will created custom gifs the convey the core concept of each idea in one glance.',
+        'For the programming tiles, I created custom gifs that convey the core concept of each idea in one glance. I wanted the motion to grab attention but also explain itself.',
         'Disco Dude sillohette gif'
         ],
         ['Logo Gif',
         'assets/Gallery/Animation/WSLogo/WS9.png',
-        'The logo posed an interesting problem. Replacing a static logo with a gif on hover seemed like the best choice initially. However the goal was to have full control over the frames in this gif. With a small JS function Will created a gif that goes forward and reverse depending on hover state. Moreover if the user hovers off before the end of the animation it begins reversing from the frame it landed on!',
+        'The logo posed an interesting problem. My goal was to have full control over the frames in this gif. With JS, I created a .png sequence that goes forward on mouseover and reverse on mouseoff. Moreover, if the user breaks the hover state before the end of the animation it begins reversing from the frame it was on.',
         'WS logo gif'
         ],
-        ['Paralaxing Background',
+        ['Parallaxing Background',
         'assets/Gallery/Background/Moon.png',
-        'Will is always reaching for the stars in hopes of landing on the moon. So a paralxing background of space comes as a no brainer.',
-        'Moon'
+        'A parallaxing background of stars, the moon, and earth was the final concept to make my site feel grounded.',
+        'Moon image'
         ]
     ],
     motif: [
-        ['Motif Food Issue Cover',
+        ['Food Issue Cover',
         'assets/Gallery/Motif/FoodCover.jpg',
-        'Motif Magazine employs Will as a freelance designer and wordpress developer. This Issue of Motif was created by Will during his time as lead designer at Motif Magazine. *Id Publish Online feature produces unfortunate artifacts not represented in the final print of each issue.',
+        'Motif Magazine employs me as a freelance designer and Wordpress developer. I designed this Issue of Motif during my time as lead designer. All of these images will take you to an “Id Publish Online magazine”. Keep in mind that this feature produces unfortunate design defects not represented in the final print of each issue.',
         'Motif Food Issue Cover',
         'https://indd.adobe.com/view/9c26a979-cf26-45f9-96a9-9fcfd267d14d'
         ],
         ['Cannabis Issue, Eating Spread',
         'assets/Gallery/Motif/CannabisEating.jpg',
-        'The Eating section, one of motif\'s subsections, which require a special visual treatment. This issue\'s theme was Cannabis, to read the issue click the image above.',
+        'The Eating section in Motif, requires a special visual treatment. This page shows a technique I devised to allow more image space and text by making half of the image a screen back. To see more and read the issue click the image above.',
         'Cannabis Issue Eating Spread',
         'https://indd.adobe.com/view/8720e976-0198-4b0b-9893-742b5e699749'
         ],
         ['Tiny Lobster Article',
         'assets/Gallery/Motif/TinyLobster.jpg',
-        'While Will was the lead designer each issue had a back page devoted to telling a story with images. This issue, Will wrote an article about creating the cover. Read the issue by clicking the image above.',
+        'While I was the lead designer, each issue had a back page devoted to telling a story using images. In this issue, I wrote an article about creating the cover with a local artist. Read the issue by clicking the image above.',
         'Tiny Lobster back story',
         'https://indd.adobe.com/view/9c26a979-cf26-45f9-96a9-9fcfd267d14d'
         ],
         ['A Taste of Ireland',
         'assets/Gallery/Motif/Centerspread.jpg',
-        'Will designed a unique centerspread graphic spanning two pages each issue. This centerspread focuses on the beauty of Ireland as told by the native irish author and his photography. Find this centerspread by clicking the image to read more.',
+        'For each issue, I designed a unique centerspread graphic spanning two pages. This centerspread focuses on the beauty of Ireland as told by the native Irish author through his photography. View this centerspread by clicking the image above.',
         'Motif Spring guide centerspread',
         'https://indd.adobe.com/view/8a081028-feae-4e76-9c7b-81c4ba0f124a'
         ],
         ['A Taste of Antarctica',
         'assets/Gallery/Motif/AntarcticaSpread.jpg',
-        'This centerspread highlights the beauty of Antarctica. While supporting the story being told by the authors.',
+        'This centerspread highlights the beauty of Antarctica while supporting the narrative about climate change and its effect on the fragile ecosystem of Antarctica.',
         'Motif Spring guide centerspread',
         'https://indd.adobe.com/view/f4444bf0-704e-4840-88c5-e25f223a1cf7'
         ],
         ['Hot Rods Photo Bash',
         'assets/Gallery/Motif/HotRods.jpg',
-        'Will was often given a folder of photos to create a one page composition to close out each issue of Motif. This one was all hot rods from a local car show.',
+        'To close out each issue of Motif I created a photo bash from a folder of provided photos. The challenge with this page was filtering through a couple hundred photos of hot rods from a local car show.',
         'Hot Rod Photo Bash',
         'https://indd.adobe.com/view/81200c61-0434-4e1b-b15d-30dcbc61a7b0'
         ],
         ['Whale Guitar Photo Bash',
         'assets/Gallery/Motif/WhaleGuitar.jpg',
-        'This photo bash tells the story of a local peice of art the comes in the form of a guitar.. and a whale.',
+        'This photo bash tells the story of a local piece of art that comes in the form of both a guitar and a whale.  After choosing this hero image it occurred to me how tough it is to silhouette a guitar. With a little time and patience, anything is possible.',
         'Whale Guitar Photo Bash',
         'https://indd.adobe.com/view/f4444bf0-704e-4840-88c5-e25f223a1cf7'
         ]
@@ -156,81 +156,81 @@ const objArr = {
     khoo: [
         ['Sunday Khoo Deal',
         'assets/Gallery/Khoo/SundayKhoo.jpg',
-        'This table tent was designed to bring more customers in for sundays.',
+        'As the primary designer for Khoo, I am tasked with many types of projects from an 18\'x9\' poster to this table tent.',
         'Sunday Khoo table tent'
         ],
         ['Thirsty Thursday',
         'assets/Gallery/Khoo/ThirstyThursday.jpg',
-        'Collaborating with the bartenders made for much prittier table tents.',
+        'When I collaborated with the bartenders, it usually made for much better table tents. The toughest part of this table tent was silhouetting smooth rounded edges, which I have gotten used to doing since this project. ',
         'Thirsty Thursday table tent'
         ],
-        ['Khoo Menu PG 2',
+        ['Menu PG 2',
         'assets/Gallery/Khoo/DinningMenuGray2.jpg',
-        'Khoo had a major haul of their entire dining menu. Will overcame many challenges during this project. The main obsticle with this project was the sheer amount of copy.',
+        'Khoo wanted a major haul of their entire dining menu. I overcame many challenges during this project, including things like negotiating space for images and text with the owners. The main obstacle with this project was the sheer amount of copy required to fill an entire menu.',
         'Khoo Menu pg 2'
         ],
-        ['Khoo Menu PG 5',
+        ['Lunch Combos',
         'assets/Gallery/Khoo/DinningMenuGray5.jpg',
-        'The major obsticle with this page was organizing lunch menus in a clear and concise way.',
+        'The major obstacle with this page was organizing lunch menus in a clear and concise way. Customers were constantly confused by this page before the redesign. By simplifying explanations and options, this menu saved server’s time.',
         'Khoo Menu pg 5'
         ],
-        ['Khoo Menu PG 7',
+        ['Sushi Page',
         'assets/Gallery/Khoo/DinningMenuGray7.jpg',
-        'This page proposed a strange issue. arranging every type of sushi available on one page while still leaving room for photos.',
+        'The goal of this page was to rearrange every type of sushi available in order to fit it on one page.',
         'Khoo Sushi menu'
         ],
-        ['Khoo Special Drinks Menu',
+        ['Special Drinks',
         'assets/Gallery/Khoo/DrinksGray1.jpg',
-        'The specialty drinks page was the first page created by Will for Khoo. The main hurtle for this page was sillohetting each drink indevidually.',
+        'The specialty drinks page was the first page I created  for Khoo. The main hurdle for this page was silhouetting each drink individually. This eventually became the norm with all Khoo print collateral.',
         'Khoo Special drinks menu'
         ],
-        ['Khoo Drinks Menu',
+        ['Drinks Menu',
         'assets/Gallery/Khoo/DrinksGray2.jpg',
-        'The second drinks page was more straight forward. This page serves the express purpose of idisplaying all the available brands in Khoo\'s full bar.',
+        'The back side of the drinks page was more straightforward. This page displays all available brands in Khoo\'s full bar.',
         'Khoo drinks menu'
         ]
     ],
     ui: [
         ['Friend Finder Login',
         'assets/Gallery/UI/2.jpg',
-        'Looking to Design a Complete UI, Will created Friend Finder. This Project started as illustrations on flashcards.',
+        'I created Friend Finder with one goal in mind, to make a complete UI.',
         'Friend Finder login'
         ],
         ['Find Friends',
         'assets/Gallery/UI/3.jpg',
-        'Flip through a virtual roledex of friends until you find people with similar intrests. Unlike other swiping apps this Friend Finder is for fun and not looking for... well something else.',
+        'Flip through a virtual rolodex of friends until you find people with similar interests. I wanted to design an app that emphasizes friendship over romance.',
         'Find Friends page'
         ],
         ['Find Activities',
         'assets/Gallery/UI/4.jpg',
-        'This page is a feed of activities to attend. Friends can post events with little to no notice in hopes of meeting people who are free in the area.',
+        'This page is a feed of activities to attend. People can post events in hopes of meeting friends in the area.',
         'Friend Finder Feed'
         ],
         ['Your Friends',
         'assets/Gallery/UI/5.jpg',
-        'Friend finder obviously needs a page to keep track of all the friends you have found using the app.',
+        'This page is a page for searching through the friends you already have made on the app. You can message them or check up on what they are up to.',
         'Friend Finder Friends Page'
         ],
         ['Friend Finder Flow Chart',
         'assets/Gallery/UI/Flow Chart.jpg',
-        'Friend finder started on flash cards then moved to a basic flow chart before becoming this final document',
+        'This flowchart shows a full overview of the app. Before designing any of these screens, a pencil and paper version of this flowchart was created.',
         'Friend Finder flow chart'
         ],
         ['Resume Book',
         'assets/Gallery/UI/ResumeBook.png',
-        'Will created a looser/fun, portfolio website to apply for hasbro. All of the UI elements correspond to the theme of the page they live on.',
+        'I created this themed portfolio website to apply for game UI positions. All of the UI elements correspond to the theme of the page they live on.',
         'Resume Book UI'
         ]
     ],
     comics: [
         ['Alienation S1 E3',
         'assets/Gallery/Comics/AlienationS1E3.jpg',
-        'While working as the lead design for Motif Will created a series of in house comics called "Alienation". This comic, like many others reflected the Motif environment.',
+        'While working as the lead designer for Motif, I created a series of comics called "Alienation". This comic, like many others, reflected the hectic Motif environment.',
         'Alienation S1 E3'
         ],
         ['Alienation S1 E5',
         'assets/Gallery/Comics/AlienationS1E5FullMin.jpg',
-        'This comic is perticularly notible because it involves two recurring comics in Motif. Will colaborated with the E. (the owner of Nazo Labs) to create this monsterpiece.',
+        'This comic is particularly notable because it involves two recurring comics in Motif. I collaborated with E. (the owner of Nazo Labs) to create this monsterpiece.',
         'Alienation S1 E5'
         ],
         ['Alienation S1 E7',
@@ -242,58 +242,58 @@ const objArr = {
     animation: [
         ['Disco Dude Character Animation',
         'assets/Gallery/DiscoDude/disco-dude.gif',
-        'As a programmer createing a video game, having a background in animation comes in handy. Will demonstrated this for his HTML5 game Disco Dude. Click the gif above or this <a href="https://disco-dude.netlify.app" target="_blank">link</a> to play the game.',
+        'As a programmer creating a video game, having a background in animation comes in handy. I demonstrated this for my HTML5 game, Disco Dude. Click the gif above to play the game.',
         'Gif of a Disco Dancer',
         'https://disco-dude.netlify.app'
         ],
         ['Venga Phone Animation',
         'assets/Gallery/Animation/Venga Climb.mp4',
-        'Venga Climb needed animations of a phone with their app on it. Using blender Will was able to create several clips to meet their needs. watch timestamps 00:10, 1:20, end 1:38 so see the phone fly into action',
+        'Venga Climbing needed animations of a phone with their app on it. Using Blender, I created several clips to meet their needs. Watch timestamps 00:10, 1:20, and 1:38 to see the phone fly into action.',
         'Venda Climbing comercial'
         ],
         ['The Ultimate Zackatana',
         'assets/Gallery/Animation/Zakatana.mp4',
-        'Using Blender Will sculpted and designed a beat saber game asset for his brother. This animation was presented as a christmas present reveal. The saber features trail and lighting effects.',
+        'I used Blender to design and sculpt a Beat Saber game asset for my brother. This animation was presented as a Christmas present reveal. The saber features trail and lighting effects that work in game.',
         'Zackatana trailer'
         ],
         ['Avocado On The Run',
         'assets/Gallery/Animation/AvacadoRun.mp4',
-        'As a test animation, Will set out to create anything his family asked of him. This Avacado is what was requested and now he is on the lam.',
+        'As a test animation, I set out to create anything my family asked of me. This Avocado is what was requested and now he is on the lam.',
         'Avacoda Run Cycle'
         ],
         ['2D Portfolio Reel',
         'assets/Gallery/Animation/AnimationReel2018.mp4',
-        'This is a reel of 2D animations created by Will.',
+        'This is a reel of my 2D animations pre-2018. A lot of them are unfinished, and now I mostly animate on demand when needed. ',
         '2D portfolio Reel'
         ]
     ],
     website: [
         ['Portfolio Site',
-        'assets/Gallery/websites/PortfolioSite.png',
-        'Beleive it or not, Will designed the website you are on currently. Be sure to check out the programming side of the site, there are cute gifs.',
+        'assets/Gallery/PortfolioSite/CutsomeGifs.png',
+        'I designed the entire website you are on currently. Be sure to check out the programming tiles at the top (there are cute gifs), and the sweet parallax effect.',
         'Portfolio Site'
         ],
         ['Infinite Scroll',
         'assets/Gallery/InfiniteScroll/InfiniteScroll.png',
-        'Will built this site in response to a Pramp interview question. Adding the challenge of React.js contributed a valuble learneing experience. To visit the site click the image above.',
+        'I built this site in response to a Pramp interview question. I used  React.js for a challenging learning experience. To visit the site, click the image above.',
         'Infinite Scroll screen shot',
         'https://wills-infinite-scroll.netlify.app/'
         ],
         ['Comic Complex',
         'assets/Gallery/Comic Complex/about.png',
-        'The Comic Complex is a conceptual portfolio. A ideal place where artist can live and display their art inspired by a local arts programm AS220. To visit the site follow this <a href="https://comic-complex.netlify.app/#/" target="_blank">link</a> or click the image above. ',
+        'The Comic Complex is a conceptual portfolio representing an ideal place where artists can live and display their art inspired by a local arts program, AS220. To visit the site click the image above.',
         'About page of the Comic Complex',
         'https://comic-complex.netlify.app/#/about'
         ],
         ['Motif Word Press',
         'assets/Gallery/websites/MotifWebsite.png',
-        'Though the job didn\'t entail much, Will spent six months updating and publishing articles on Motif Magazine\'s Wordpress site. Here is a <a href="https://motifri.com/the-tail-of-a-tiny-lobster/" target="_blank">link</a> to one of the pages. Will added images to mirror the articles featured in the printed magazine. Additionally Will works for Motif as a freelance web developer helping to create sites for clients',
+        'I spent six months updating and publishing articles on Motif Magazine\'s Wordpress site. Here is a <a href="https://motifri.com/the-tail-of-a-tiny-lobster/" target="_blank">link</a> to one of the pages. I added images to mirror the articles featured in the printed magazine. Additionally, I work for Motif as a freelance web developer helping to create sites for clients.',
         'Screen Grab of the Motif Magazine website',
         'https://motifri.com/the-tail-of-a-tiny-lobster/'
         ],
         ['Wood Turner\'s Calculator',
         'assets/Gallery/turners-calculator/WebVase2.png',
-        'Will designed this site for wood workers to calculate segmented rings. The UI is responsive and designed to be mobile first. Follow this <a href="https://wood-turners-calculator.netlify.app/" target="_blank">link</a> to visit this site.',
+        'I designed this site for woodworkers to calculate segmented rings. The UI is responsive and designed to be mobile first. Follow this <a href="https://wood-turners-calculator.netlify.app/" target="_blank">link</a> to visit this site.',
         'Screen Grab of Turner\'s Calculator',
         'https://wood-turners-calculator.netlify.app/'
         ]
