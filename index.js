@@ -451,14 +451,14 @@ scrollEvent = () => {
     let moon = document.querySelector('.moon');
     let moonLight = document.querySelector('.moon-light');
     let trees = document.querySelector('.trees');
-    let body = document.getElementsByTagName('BODY')[0];
+    // let body = document.getElementsByTagName('BODY')[0];
 
     let value = window.scrollY;
     let totalHeight = document.body.clientHeight;
 
     let grow = ((value *.01) + 60 +'%');
 
-    body.style.backgroundSize = ((-value*.005) + 120 +'%'), ((-value *.005) + 120 +'%');
+    // body.style.backgroundSize = ((-value*.005) + 120 +'%'), ((-value *.005) + 120 +'%');
     
     moon.style.transform = 'rotate(' + value*.008 + 'deg)';
     moon.style.backgroundSize = grow, grow;
@@ -466,7 +466,7 @@ scrollEvent = () => {
     moon.style.bottom = ((value/ totalHeight * 85) - 20 +'%');
     moonLight.style.top = ((-value* 0.008) + 20 +'%');
 
-    trees.style.bottom = ((value* 0.008)- 70 +'%');
+    trees.style.bottom = ((value* 0.01) - 70 +'%');
 }
 
 let frames = 1

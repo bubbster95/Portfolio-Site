@@ -9,7 +9,7 @@ html, body {
 
 body {
     background-image: url('assets/Gallery/Background/MilkyWay.jpg');
-    background-size: 120%;
+    background-size: cover;
     background-position: 0% 0%;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -18,12 +18,12 @@ body {
     overflow-x: hidden;
 }
 
-
 html, body, .contact-info, .header, .content, .panel, #projects {
     width: 100%;
 }
 
-html, p, .panel, .content {
+
+p, .panel, .content {
     height: 100%;
 }
 
@@ -94,7 +94,7 @@ a:hover {
     background-color: black;
 }
 
-.closePanel, .send, .clear {
+.closePanel, .send, .clear  {
     background-color: rgba(0,0,0,0);
 }
 
