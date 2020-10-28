@@ -18,7 +18,7 @@ body {
     overflow-x: hidden;
 }
 
-html, body, .contact-info, .header, .content, .panel, #projects {
+html, body, .education, .header, .content, .panel, #projects {
     width: 100%;
 }
 
@@ -118,7 +118,8 @@ h2 {
 }
 
 h3 {
-    font-size: 3vh;
+    font-size: 5vh;
+    margin: 0px;
 }
 
 p {
@@ -151,7 +152,7 @@ a {
 .content {
     display: flex;
     position: relative;
-    top: 74vh;
+    top: 150vh;
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -207,17 +208,19 @@ a {
 /* About Will */
 .content-grid {
     position: absolute;
-    align-self: center;
-    width: 80%;
+    margin: auto;
+    width: 100%;
     top: 90px;
     padding: 2%;
     display: grid;
     grid-gap: 2vh;
-    grid-template-rows: 8vh 40vh 5vh;
+    grid-template-rows: 8vh 40vh 25vh 25vh 25vh;
     grid-template-columns: 40vh 50vh;
     grid-template-areas:
     'title title' 
     'image body'
+    'info info'
+    'info info'
     'info info';
     align-items: start;
     justify-items: start;
@@ -229,7 +232,7 @@ a {
     align-self: center;
     grid-area: title;
 }
-.contact-title, h3, .contact-info, .contact-text, .profile {
+.contact-title, h3, .education, .contact-text, .profile {
     padding: 0%;
 }
 
@@ -238,8 +241,59 @@ h3 {
     margin-top: 0%;
 }
 
-.contact-info {
+.education {
+    position: absolute;
+    left: 0;
+    display: grid;
+    grid-gap: 2vh;
+    grid-template-rows: 10% 40% 60%;
+    grid-template-columns: 44% 54%;
+    grid-template-areas: 
+    'EduTitle EduTitle' 
+    'URImage EduText' 
+    'freeCode freeDescription';
     grid-area: info;
+    margin-top: 30px;
+    margin: auto;
+}
+
+.uri {
+    margin: auto;
+    align-self: center;
+    grid-area: URImage;
+}
+
+.free-code {
+    margin: auto;
+    display: block;
+    width: 70%;
+    justify-self: start;
+    align-self: center;
+    grid-area: freeCode
+}
+
+.free-description {
+    margin-top: 20px;
+    grid-area: freeDescription;
+    font-size: 3vh;
+    justify-self: center;
+}
+.free-description > a {
+    cursor: pointer;
+    color: #94b4c7;
+}
+
+.free-description > a:hover {
+    color: white;
+}
+
+.edu-title {
+    grid-area: EduTitle;
+}
+
+.edu-text {
+    grid-area: EduText;
+    font-size: 3vh;
 }
 
 .contact-text {
@@ -261,6 +315,8 @@ h3 {
     background-size: cover;
     background-position: center;
 }
+
+
 /* About Will End */
 
 /* Contact */
@@ -369,12 +425,32 @@ h3 {
     .content-grid {
         padding: 2%;
         padding-left: 5vw;
-        grid-template-rows: 8vh 40vh 40vh 10vh;
+        grid-template-rows: 8vh 40vh 40vh 110vh;
         grid-template-columns: 90vw;
         grid-template-areas:
-        'title''image''body''info';
+        'title''image''body''info' 'info' 'info';
         align-items: center;
         justify-items: center;
+    }
+
+    .education {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 10% 20% 20% 20% 20%;
+        grid-template-areas: 
+        'EduTitle' 
+        'URImage' 
+        'EduText'
+        'freeCode' 
+        'freeDescription';
+        grid-area: info;
+    }
+    .uri {
+        margin: auto;
+    }
+
+    .free-code {
+        width: 40%;
     }
     .form-grid {
         grid-template-rows: 50px 20px 50px 20px 50px 100px 20px 20px;
@@ -391,14 +467,14 @@ h3 {
     .clear, .send, .name-input, .email-input, .message-input{
         justify-self: center;
     }
-    .contact-title, .contact-text, .contact-info, h4, p {
+    .contact-title, .contact-text, .education, h4, p {
         text-align: center;
     }
     .profile-body {
         justify-self: center;
     }
 
-    .content { margin-top: 10px; top: 120vh; }
+    .content { margin-top: 10px; top: 230vh; }
 
     .tile-bottom, .tile-top { height: 30vh; width: 30vh; }
 
