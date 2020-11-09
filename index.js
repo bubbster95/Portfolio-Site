@@ -1,5 +1,37 @@
 // Panel Content as such: Title, Url, Description, Alt, Destination link.
 const objArr = {
+    bouquet: [
+        ['Bouq-A-Okay',
+        'assets/Gallery/Bouq-a-okay/BouqHomePage-min.png',
+        'I created this site to streach my skills in React.js. As my first large scale React project the largest hurtle was learning to pass props and state down the component tree effectively. Implementing a this.state.cart in the highest level component (app.js) allowed me to lift up state between three pages and a header component. ',
+        'Bouq-A-Okay home page for desktop.',
+        'https://bouq-a-okay.netlify.app/'
+        ],
+        ['Mobile First', 
+        'assets/Gallery/Bouq-a-okay/BouqHomeMobile-min.png',
+        'Porgrammed using the mobile first approach allowed for easy responsive css to be added later. To see the github repo for this project click this <a href="https://github.com/bubbster95/Bouquet_Okay" target="_blank">link</a>.',
+        'Cart page of Bouq-A-Okay',
+        'https://bouq-a-okay.netlify.app/'
+        ],
+        ['A Simple Page',
+        'assets/Gallery/Bouq-a-okay/ChooseABouq-min.png',
+        'The simplest page to create was "Choose a Bouquet" because I had already worked out most of the technical difficulties of passing a purchased item from the "Design a bouquet" page.',
+        'Choose a Bouquet page.',
+        'https://bouq-a-okay.netlify.app/'
+        ],
+        ['Pick Your Pallet',
+        'assets/Gallery/Bouq-a-okay/PickYOurPallet-min.png',
+        'The design page had three major fucionalities I had in mind. This section the user is supposed to choose a color pallet from six swatches that toggle on and off when you click a pallet. Uppon changing the colors in the pallet the flowers below are filtered based off of their color. If all pallets are red the only flower choices available will be red. To try out this UI, click the image above or this <a href="https://bouq-a-okay.netlify.app/" target="_blank">link</a>.',
+        'Pick your pallet section of the Design a Bouquet page.',
+        'https://bouq-a-okay.netlify.app/'
+        ],
+        ['Pick Your Flowers',
+        'assets/Gallery/Bouq-a-okay/PickYourFlowers-min.png',
+        'After picking your colors and the size of your bouquet you must choose the flowers that will compose your bouquet. The toughest part of coding this element was having them render from an object while filtering out any flower that didn\'t fit the color scheme. Upon choosing the correct number of flowers you are then asked to look over the choices and approve before sending to the cart.',
+        'Pick your flowers section of the Design a Bouquet page.',
+        'https://bouq-a-okay.netlify.app/'
+        ]
+],
     disco: [
         ['Disco Dude', 
         'assets/Thumbnails/disco-dude.gif',

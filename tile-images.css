@@ -1,4 +1,9 @@
 /* Backgroung Images */
+#bouquet {
+    background-image: url("assets/Thumbnails/Bouquet.gif");
+    background-position: top left;
+    background-size: cover;
+}
 #turner {
     background-image: url("assets/Thumbnails/TurnersGif.gif");
     background-position: top left;
