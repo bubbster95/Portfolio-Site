@@ -483,14 +483,11 @@ scrollEvent = () => {
     let moon = document.querySelector('.moon');
     let moonLight = document.querySelector('.moon-light');
     let trees = document.querySelector('.trees');
-    // let body = document.getElementsByTagName('BODY')[0];
 
     let value = window.scrollY;
     let totalHeight = document.body.clientHeight;
 
     let grow = ((value *.01) + 60 +'%');
-
-    // body.style.backgroundSize = ((-value*.005) + 120 +'%'), ((-value *.005) + 120 +'%');
     
     moon.style.transform = 'rotate(' + value*.008 + 'deg)';
     moon.style.backgroundSize = grow, grow;
